@@ -1,0 +1,48 @@
+button{
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.nav-btn{
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(138.65deg, #310E47 -3.35%, #961581 97.84%);
+    border: 1px solid #FFFFFF;
+}
+
+.launchpad-btn{
+    width: 23rem;
+    height: 4rem;
+    background: linear-gradient(262.89deg, rgba(255, 153, 0, 0.33) -39.3%, #FF9900 77.41%);
+    border: 1px solid #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.earnNow-btn{
+    background: linear-gradient(260.51deg, #FF9900 27.74%, rgba(255, 153, 0, 0.33) 113.25%);
+    border: 1px solid #FFFFFF;
+    width: 23rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 767px) {
+    .launchpad-btn, .earnNow-btn{
+        width: 17rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .launchpad-btn, .earnNow-btn{
+        width: 19rem;
+        font-size: 1.8rem;
+    }
+}

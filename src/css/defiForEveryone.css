@@ -1,0 +1,67 @@
+.defi-for-everyone{
+    padding: 5%;
+    color: #fff;
+}
+
+.defi-for-everyone h3{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.defi-for-everyone span{
+    font-weight: 700;
+}
+
+.defi-for-everyone-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.defi-for-everyone-content img{
+    width: 25%;
+}
+
+.defi-for-everyone-content p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.defi-for-everyone-content ul{
+    padding-left: 2rem;
+}
+
+.defi-for-everyone-content ul li{
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+}
+
+
+/******************************************* Responsive Styling ***********************************************/
+@media screen and (max-width: 767px) {
+    .defi-for-everyone{
+        padding: 5% 4%;
+    }
+    
+    .defi-for-everyone h3{
+        font-size: 2.5rem;
+    }
+    
+    .defi-for-everyone-content{
+        flex-direction: column;
+    }
+    
+    .defi-for-everyone-content img{
+        width: 50%;
+    }
+    
+    .defi-for-everyone-content p{
+        font-size: 1rem;
+    }
+    
+    .defi-for-everyone-content ul li{
+        font-size: 1rem;
+    }
+}

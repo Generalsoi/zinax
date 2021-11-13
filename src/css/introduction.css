@@ -1,0 +1,84 @@
+.introduction{
+    padding: 10% 5%;
+    color: #fff;
+}
+
+.introduction-content-div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+}
+
+.introduction-content-div .child{
+    flex: 1;
+}
+
+.introduction-content h3{
+    font-size: 3.8rem;
+}
+
+.introduction-content p{
+    font-size: 1.5rem;
+    color: #FFD601;
+}
+
+.introduction-content-div img{
+    width: 30%;
+}
+
+.introduction-btns{
+    margin-top: 4rem;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*****************************************/
+/*** Responsive Design *******************/
+@media screen and (max-width: 767px) {
+    .introduction{
+        padding: 25% 4%;
+    }
+    
+    .introduction-content-div{
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .introduction-content h3{
+        font-size: 2.5rem;
+    }
+    
+    .introduction-content p{
+        font-size: 1rem;
+    }
+    
+    .introduction-content-div img{
+        width: 60%;
+    }
+
+    .introduction-btns{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .introduction{
+        padding: 15% 4%;
+    }
+
+    .introduction-content h3{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .introduction{
+        padding: 15% 4%;
+    }
+}
