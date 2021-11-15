@@ -109,5 +109,25 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .defi-for-everyone-content{
+        flex-direction: column;
+    }
 
+    .defi-for-everyone .decentralised{
+        position: absolute;
+        top: 18%;
+        right: 4%;
+        font-size: 1rem;
+    }
+
+    .decentralised-line{
+        right: 29%;
+        top: 19.5%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .decentralised-line{
+        right: 29%;
+    }
 }
