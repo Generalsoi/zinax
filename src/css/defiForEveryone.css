@@ -1,11 +1,37 @@
 .defi-for-everyone{
     padding: 5%;
     color: #fff;
+    position: relative;
 }
 
 .defi-for-everyone h3{
     font-size: 3rem;
     font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.defi-for-everyone .decentralised{
+    position: absolute;
+    top: 27%;
+    right: 5%;
+    font-size: 1.2rem;
+}
+
+.defi-for-everyone h3::after{
+    content: "";
+    display: block;
+    width: 20%;
+    padding-top: 20px;
+    border-bottom: 5px solid #FF9900;
+}
+
+.decentralised-line{
+    position: absolute;
+    right: 22.5%;
+    top: 29.5%;
+    background: #fff;
+    width: 5%;
+    height: 1px;
 }
 
 .defi-for-everyone span{
@@ -64,4 +90,24 @@
     .defi-for-everyone-content ul li{
         font-size: 1rem;
     }
+
+    .defi-for-everyone .decentralised{
+        position: absolute;
+        top: 15%;
+        right: 4%;
+        font-size: 0.8rem;
+    }
+
+    .decentralised-line{
+        position: absolute;
+        right: 42%;
+        top: 16%;
+        background: #fff;
+        width: 5%;
+        height: 1px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
 }

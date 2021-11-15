@@ -32,6 +32,8 @@ const DefiForEveryone = () => {
           </ul>
         </div>
       </div>
+      <div className="decentralised">Decentralised Economy</div>
+      <div className="decentralised-line"></div>
     </section>
   );
 };
