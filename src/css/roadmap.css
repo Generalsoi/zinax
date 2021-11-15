@@ -1,0 +1,36 @@
+.roadmap{
+    padding: 5%;
+    color: #fff;
+}
+
+.roadmap h3{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.roadmap h3::after{
+    content: "";
+    display: block;
+    padding-top: 20px;
+    width: 8%;
+    border-bottom: 5px solid #FF9900;
+}
+
+.roadmap-content img{
+    width: 100%;
+}
+
+/******************************************* Responsive Styling ***********************************************/
+@media screen and (max-width: 767px) {
+    .roadmap{
+        padding: 5% 4%;
+    }
+
+    .roadmap h3{
+        font-size: 1.8rem;
+    }
+
+    .roadmap h3::after{
+        width: 20%;
+    }
+}

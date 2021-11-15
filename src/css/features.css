@@ -1,0 +1,17 @@
+.features{
+    padding: 5%;
+    color: #fff;
+}
+
+.features h3{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.features h3::after{
+    content: "";
+    display: block;
+    padding-top: 20px;
+    width: 8%;
+    border-bottom: 5px solid #FF9900;
+}
