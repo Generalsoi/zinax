@@ -15,3 +15,54 @@
     width: 8%;
     border-bottom: 5px solid #FF9900;
 }
+
+.features-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+
+.features-btn{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+/******************************************* Responsive Styling ***********************************************/
+@media screen and (max-width: 767px) {
+    .features{
+        padding: 5% 4%;
+    }
+
+    .features h3{
+        font-size: 1.8rem;
+    }
+
+    .features h3::after{
+        width: 20%;
+    }
+
+    .features-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 90px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .features-content{
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .features-content{
+        flex-wrap: wrap;
+        gap: 90px;
+        justify-content: space-around;
+    }
+}

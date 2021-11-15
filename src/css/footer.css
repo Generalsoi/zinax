@@ -1,0 +1,27 @@
+.footer{
+    padding: 5%;
+    text-align: center;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.footer h5{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer img{
+    width:30px;
+    height: 30px;
+}
+
+.footer-links{
+    cursor: pointer;
+}

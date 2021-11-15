@@ -1,12 +1,13 @@
 import React from "react";
+import "../css/card.css";
 
-const Card = () => {
+const Card = (props) => {
+  const { cardImg, cardHeading, cardContent } = props;
   return (
     <div className="card">
-      <h3>Features</h3>
-      <div className="features-content">
-        <Card />
-      </div>
+      <img src={cardImg} alt="cardIcon" />
+      <h4>{cardHeading}</h4>
+      <p>{cardContent}</p>
     </div>
   );
 };

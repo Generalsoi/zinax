@@ -6,6 +6,8 @@ import DefiForEveryone from "./components/defiforEveryone";
 import AboutUs from "./components/aboutus";
 import Roadmap from "./components/roadmap";
 import Features from "./components/features";
+import Tokenomics from "./components/tokenomics";
+import Footer from "./common/footer";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <AboutUs />
         <Roadmap />
         <Features />
+        <Tokenomics />
+        <Footer />
       </div>
     </BrowserRouter>
   );
