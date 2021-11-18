@@ -9,7 +9,6 @@ import Pools from "./routes/pools";
 function App() {
   return (
     <div>
-      <Navbar />
       <Routes>
         <Route path="/" page="0" exact element={<HomePage />} />
         <Route path="/launchpad" exact element={<LaunchApp />} />

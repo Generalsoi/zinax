@@ -4,7 +4,7 @@ import ZinaxLogo from "../images/zinax-logo.png";
 import Button from "./button";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [navLinks, setNavLinks] = useState(1);
 
   useEffect(() => {
@@ -14,64 +14,132 @@ const Navbar = () => {
     }
   }, []);
 
-  return (
-    <header>
-      <nav className="navbar">
-        <div className="nav-logo">
-          <img src={ZinaxLogo} alt="zinax-logo" />
+  const { page } = props;
 
-          <Link to="/" class="nav-logo-img">
-            <h3>Zinax</h3>
-          </Link>
-        </div>
+  if (page === "0") {
+    return (
+      <header>
+        <nav className="navbar">
+          <div className="nav-logo">
+            <img src={ZinaxLogo} alt="zinax-logo" />
 
-        {navLinks ? (
-          <div className={`nav-links-div ${navLinks}`}>
-            <ul>
-              <li>
-                <Link to="/features" className="nav-links">
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link to="" className="nav-links">
-                  NFTs
-                </Link>
-              </li>
-              <li>
-                <Link to="" className="nav-links">
-                  DAO
-                </Link>
-              </li>
-              <li>
-                <Link to="/pools">
-                  <Button buttonStyles="nav-btn" buttonContent="Pools" />
-                </Link>
-              </li>
-            </ul>
+            <Link to="/" class="nav-logo-img">
+              <h3>Zinax</h3>
+            </Link>
           </div>
-        ) : (
-          ""
-        )}
 
-        <div
-          className="menubar"
-          onClick={() => {
-            if (navLinks === 0) {
-              setNavLinks(1);
-            } else {
-              setNavLinks(0);
-            }
-          }}
-        >
-          <div className="bar bar1"></div>
-          <div className="bar bar2"></div>
-          <div className="bar bar3"></div>
-        </div>
-      </nav>
-      {/* {navLinks ? <div>Hello</div> : ""} */}
-    </header>
-  );
+          {navLinks ? (
+            <div className={`nav-links-div ${navLinks}`}>
+              <ul>
+                <li>
+                  <Link to="/features" className="nav-links">
+                    Features
+                  </Link>
+                </li>
+                <li>
+                  <Link to="" className="nav-links">
+                    NFTs
+                  </Link>
+                </li>
+                <li>
+                  <Link to="" className="nav-links">
+                    DAO
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/pools">
+                    <Button buttonStyles="nav-btn" buttonContent="Pools" />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            ""
+          )}
+
+          <div
+            className="menubar"
+            onClick={() => {
+              if (navLinks === 0) {
+                setNavLinks(1);
+              } else {
+                setNavLinks(0);
+              }
+            }}
+          >
+            <div className="bar bar1"></div>
+            <div className="bar bar2"></div>
+            <div className="bar bar3"></div>
+          </div>
+        </nav>
+        {/* {navLinks ? <div>Hello</div> : ""} */}
+      </header>
+    );
+  } else {
+    return (
+      <header>
+        <nav className="navbar">
+          <div className="nav-logo">
+            <img src={ZinaxLogo} alt="zinax-logo" />
+
+            <Link to="/" class="nav-logo-img">
+              <h3>Zinax</h3>
+            </Link>
+          </div>
+
+          {navLinks ? (
+            <div className={`nav-links-div ${navLinks}`}>
+              <ul>
+                <li>
+                  <Link to="" className="nav-links">
+                    Pools
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className="nav-links">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="" className="nav-links">
+                    NFTs
+                  </Link>
+                </li>
+                <li>
+                  <Link to="" className="nav-links">
+                    DAO
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/pools">
+                    <Button buttonStyles="nav-btn" buttonContent="Pools" />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            ""
+          )}
+
+          <div
+            className="menubar"
+            onClick={() => {
+              if (navLinks === 0) {
+                setNavLinks(1);
+              } else {
+                setNavLinks(0);
+              }
+            }}
+          >
+            <div className="bar bar1"></div>
+            <div className="bar bar2"></div>
+            <div className="bar bar3"></div>
+          </div>
+        </nav>
+        {/* {navLinks ? <div>Hello</div> : ""} */}
+      </header>
+    );
+  }
 };
 
 export default Navbar;

@@ -1,0 +1,88 @@
+.pools-intro{
+    padding: 15% 18% 7%;
+    color: #fff;
+    text-align: center;
+}
+
+.pools-intro h3{
+    font-size: 4.5rem;
+}
+
+.pools-intro span{
+    color: #FFD601;
+}
+
+.pools-intro p{
+    font-size: 1.5rem;
+}
+
+.pools-input-bar{
+    margin-top: 2rem;
+}
+
+.pools-input-bar input{
+    width: 40rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    background: url("../images/search.png");
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+    background-position-y: 50%;
+}
+
+.pools-input-bar input::placeholder{
+    color: rgba(218, 209, 161, 0.4);
+    font-family: Poppins;
+    font-size: 1.2rem;
+}
+
+
+/*****************************************/
+/*** Responsive Design *******************/
+@media screen and (max-width: 767px) {
+    .pools-intro{
+        width: 100%;
+        padding: 25% 4% 5%;
+    }
+    
+    .pools-intro h3{
+        font-size: 2.5rem;
+    }
+    
+    .pools-intro p{
+        font-size: 0.8rem;
+    }
+    
+    .pools-input-bar{
+        margin-top: 2rem;
+    }
+    
+    .pools-input-bar input{
+        width: 100%;
+        height: 3rem;
+    }
+    
+    .pools-input-bar input::placeholder{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .pools-intro{
+        width: 100%;
+        padding: 25% 4% 5%;
+    }
+
+    .pools-intro p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .pools-intro{
+        width: 100%;
+        padding: 25% 7% 5%;
+    }
+}
