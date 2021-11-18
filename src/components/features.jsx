@@ -8,10 +8,11 @@ import CreateIfos from "../images/createifos.png";
 import Liquidity from "../images/liquidity.png";
 import PredictAndEarn from "../images/predictandearn.png";
 import Button from "../common/button";
+import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
-    <section className="features">
+    <section className="features" id="features">
       <h3>Features</h3>
       <div className="features-content">
         <Card
@@ -46,7 +47,9 @@ const Features = () => {
         />
       </div>
       <div className="features-btn">
-        <Button buttonContent="Launchpad" buttonStyles="launchpad-btn" />
+        <Link to="/launchpad">
+          <Button buttonContent="Launchpad" buttonStyles="launchpad-btn" />
+        </Link>
       </div>
     </section>
   );

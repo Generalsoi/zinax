@@ -20,6 +20,11 @@ header{
     gap: 10px;
 }
 
+.nav-logo-img{
+    text-decoration: none;
+    color: #fff;
+}
+
 .nav-logo img{
     width: 40%;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import ZinaxLogo from "../images/zinaxcoin.png";
 import Button from "../common/button";
 import "../css/introduction.css";
+import { Link } from "react-router-dom";
 
 const Introduction = () => {
   return (
@@ -18,8 +19,12 @@ const Introduction = () => {
       </div>
 
       <div className="introduction-btns">
-        <Button buttonContent="Launchpad" buttonStyles="launchpad-btn" />
-        <Button buttonContent="Earn Now" buttonStyles="earnNow-btn" />
+        <Link to="/launchpad">
+          <Button buttonContent="Launchpad" buttonStyles="launchpad-btn" />
+        </Link>
+        <Link to="">
+          <Button buttonContent="Earn Now" buttonStyles="earnNow-btn" />
+        </Link>
       </div>
     </section>
   );

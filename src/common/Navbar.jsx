@@ -19,14 +19,17 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="nav-logo">
           <img src={ZinaxLogo} alt="zinax-logo" />
-          <h3>Zinax</h3>
+
+          <Link to="/" class="nav-logo-img">
+            <h3>Zinax</h3>
+          </Link>
         </div>
 
         {navLinks ? (
           <div className={`nav-links-div ${navLinks}`}>
             <ul>
               <li>
-                <Link to="" className="nav-links">
+                <Link to="/features" className="nav-links">
                   Features
                 </Link>
               </li>
@@ -41,7 +44,9 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Button buttonStyles="nav-btn" buttonContent="Pools" />
+                <Link to="/pools">
+                  <Button buttonStyles="nav-btn" buttonContent="Pools" />
+                </Link>
               </li>
             </ul>
           </div>
