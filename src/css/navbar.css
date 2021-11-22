@@ -58,6 +58,13 @@ header{
     width: 75%;
 }
 
+.nav-links-div{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-links-div ul li{
     list-style-type: none;
     margin-left: 2rem;
@@ -71,7 +78,7 @@ header{
     position: relative;
     text-align: right;
     padding-top: 5px;
-    padding-right: 2%;
+    padding-right: 5%;
 }
 
 .connect-div p{
@@ -95,6 +102,16 @@ header{
     color: #4B0057;
     font-weight: 700;
     font-size: 1.5rem;
+}
+
+.breadcrumbs-img{
+    width: 20%;
+}
+
+.connect-breadcrumbs-div{
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
 .menubar {
@@ -155,6 +172,11 @@ header{
         align-items: center;
     }
 
+    .nav-links-div{
+        flex-direction: column;
+        gap: 30px;
+    }
+
     .nav-links-div ul li{
         margin-left: 0;
         margin: 1.5rem auto 0;
@@ -167,8 +189,44 @@ header{
     .nav-logo h3{
         font-size: 1.5rem;
     }
+
+    .connect-div{
+        width: 8rem;
+        padding-top: 9px;
+        padding-right: 7%;
+        margin-top: 2rem;
+    }
+    
+    .connect-div p{
+        font-size: 1rem;
+    }
+    
+    .bsc-div{
+        width: 4rem;
+        background-color: #fff;
+        text-align: center;
+        padding-top: 7px;
+    }
+    
+    .bsc-div p{
+        font-size: 1.2rem;
+    }
+
+    .connect-breadcrumbs-div{
+        flex-direction: column;
+    }
+
+    .breadcrumbs-img{
+       display: none;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .breadcrumbs-img{
+        display: none;
+     }
 
+     .connect-div{
+        padding-right: 9%;
+     }
 }

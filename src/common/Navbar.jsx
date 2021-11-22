@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/navbar.css";
 import ZinaxLogo from "../images/zinax-logo.png";
+import Breadcrumbs from "../images/breadcrumbs.png";
 import Button from "./button";
 import { Link } from "react-router-dom";
 
@@ -111,17 +112,25 @@ const Navbar = (props) => {
                   </Link>
                 </li>
               </ul>
+
+              <div className="connect-breadcrumbs-div">
+                <div className="connect-div">
+                  <p>Connect</p>
+                  <div className="bsc-div">
+                    <p>BSC</p>
+                  </div>
+                </div>
+
+                <img
+                  className="breadcrumbs-img"
+                  src={Breadcrumbs}
+                  alt="breadcrumbs"
+                />
+              </div>
             </div>
           ) : (
             ""
           )}
-
-          <div className="connect-div">
-            <p>Connect</p>
-            <div className="bsc-div">
-              <p>BSC</p>
-            </div>
-          </div>
 
           <div
             className="menubar"
