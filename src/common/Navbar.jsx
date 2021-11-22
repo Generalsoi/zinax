@@ -110,16 +110,18 @@ const Navbar = (props) => {
                     DAO
                   </Link>
                 </li>
-                <li>
-                  <Link to="/pools">
-                    <Button buttonStyles="nav-btn" buttonContent="Pools" />
-                  </Link>
-                </li>
               </ul>
             </div>
           ) : (
             ""
           )}
+
+          <div className="connect-div">
+            <p>Connect</p>
+            <div className="bsc-div">
+              <p>BSC</p>
+            </div>
+          </div>
 
           <div
             className="menubar"

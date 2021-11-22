@@ -63,6 +63,40 @@ header{
     margin-left: 2rem;
 }
 
+.connect-div{
+    border-radius: 20px;
+    width: 10rem;
+    height: 40px;
+    border: 1px solid #fff;
+    position: relative;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 2%;
+}
+
+.connect-div p{
+    font-size: 1.3rem;
+}
+
+.bsc-div{
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    height: 40px;
+    width: 5rem;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 5px;
+    top: 0;
+    left: -25%;
+}
+
+.bsc-div p{
+    color: #4B0057;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 .menubar {
     width:40px;
     height: 20px;
