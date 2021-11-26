@@ -2,3 +2,14 @@
     color: #fff;
     padding: 5%;
 }
+
+.pools-header-content{
+    padding: 1% 5%;
+    background: #140517;
+}
+
+.pools-header-content-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -5,7 +5,7 @@ import Bar from "../images/bar.png";
 const Tokenomics = () => {
   return (
     <section className="tokenomics">
-      <h3>Tokenomics</h3>
+      <h3>Metrics</h3>
       <div className="tokenomics-content">
         <div>
           <p>Total Liquidity</p>

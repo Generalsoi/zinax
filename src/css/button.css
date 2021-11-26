@@ -14,7 +14,7 @@ button{
     border: 1px solid #FFFFFF;
 }
 
-.launchpad-btn{
+.presale-btn{
     width: 23rem;
     height: 4rem;
     background: linear-gradient(262.89deg, rgba(255, 153, 0, 0.33) -39.3%, #FF9900 77.41%);
@@ -23,7 +23,7 @@ button{
     font-weight: 700;
 }
 
-.earnNow-btn{
+.learnMore-btn{
     background: linear-gradient(260.51deg, #FF9900 27.74%, rgba(255, 153, 0, 0.33) 113.25%);
     border: 1px solid #FFFFFF;
     width: 23rem;
@@ -34,14 +34,14 @@ button{
 
 
 @media screen and (max-width: 767px) {
-    .launchpad-btn, .earnNow-btn{
+    .presale-btn, .learnMore-btn{
         width: 17rem;
         font-size: 1.5rem;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .launchpad-btn, .earnNow-btn{
+    .presale-btn, .learnMore-btn{
         width: 19rem;
         font-size: 1.8rem;
     }

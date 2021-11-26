@@ -47,9 +47,13 @@ const Features = () => {
         />
       </div>
       <div className="features-btn">
-        <Link to="/launchpad">
-          <Button buttonContent="Launchpad" buttonStyles="launchpad-btn" />
-        </Link>
+        <a
+          href="https://medium.com/@zinari/how-to-participate-in-the-zinax-phase-1-ido-336d98166995"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button buttonContent="Learn More" buttonStyles="learnMore-btn" />
+        </a>
       </div>
     </section>
   );

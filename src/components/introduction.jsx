@@ -19,12 +19,21 @@ const Introduction = () => {
       </div>
 
       <div className="introduction-btns">
-        <Link to="/launchpad">
-          <Button buttonContent="Launchpad" buttonStyles="launchpad-btn" />
-        </Link>
-        <Link to="">
-          <Button buttonContent="Earn Now" buttonStyles="earnNow-btn" />
-        </Link>
+        <a
+          href="https://www.pinksale.finance/#/launchpad/0x1c92300Af28756713C9d1D5C2E4B5F9A6aB09743?chain=BSC"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button buttonContent="Presale" buttonStyles="presale-btn" />
+        </a>
+
+        <a
+          href="https://medium.com/@zinari/how-to-participate-in-the-zinax-phase-1-ido-336d98166995"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button buttonContent="Learn More" buttonStyles="learnMore-btn" />
+        </a>
       </div>
     </section>
   );
