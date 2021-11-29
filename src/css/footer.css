@@ -1,16 +1,18 @@
 .footer{
-    padding: 5%;
+    padding: 5% 15%;
     text-align: center;
     margin-top: 2rem;
-    color: #fff;
+    color: #961581;
+    background: #fff;
 }
 
 .footer h5{
     font-size: 1rem;
     margin-bottom: 1rem;
+    color: #961581;
 }
 
-.footer div{
+.footer .footer-links-div{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -24,4 +26,48 @@
 
 .footer-links{
     cursor: pointer;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.footer-content div{
+    text-align: left;
+}
+
+.footer-content div h6{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.footer-content div a{
+    text-decoration: none;
+    color: #961581;
+}
+
+
+
+
+
+/******************************************* Responsive Styling ***********************************************/
+@media screen and (max-width: 767px) {
+    .footer{
+        padding: 5% 4%;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .footer{
+        padding: 5% 7%;
+    }
 }

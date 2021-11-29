@@ -24,10 +24,6 @@ const Tokenomics = () => {
           <h5>1,000,000</h5>
         </div>
       </div>
-
-      <div className="tokenomics-img">
-        <img src={Bar} alt="bar" />
-      </div>
     </section>
   );
 };
