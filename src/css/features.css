@@ -1,11 +1,11 @@
 .features{
     padding: 5%;
-    color: #fff;
 }
 
 .features h3{
     font-size: 2rem;
     margin-bottom: 5rem;
+    color: #961581;
 }
 
 .features h3::after{
@@ -21,7 +21,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 90px;
+    gap: 120px;
 }
 
 .features-btn{
@@ -55,7 +55,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .features-content{
-        gap: 40px;
+        gap: 50px;
     }
 }
 

@@ -32,6 +32,19 @@ button{
     font-weight: 700;
 }
 
+.cardBtn{
+    width: 80%;
+    height: 2.5rem;
+    color:#fff;
+    background: linear-gradient(262.4deg, #FF01B8 -32.19%, #9B5A8D 107.24%);
+    border-radius: 23px;
+    border: none;
+    font-size: 1.2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
 
 @media screen and (max-width: 767px) {
     .presale-btn, .learnMore-btn{

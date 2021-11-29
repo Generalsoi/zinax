@@ -2,12 +2,14 @@
     padding: 5%;
     color: #fff;
     position: relative;
+    color:#961581;
 }
 
 .defi-for-everyone h3{
     font-size: 3rem;
     font-weight: 400;
     padding-bottom: 10px;
+    color: #961581;
 }
 
 .defi-for-everyone .decentralised{
@@ -32,6 +34,7 @@
     background: #fff;
     width: 5%;
     height: 1px;
+    background: #FFD601;
 }
 
 .defi-for-everyone span{
@@ -53,7 +56,7 @@
 .defi-for-everyone-content p{
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-}
+} 
 
 .defi-for-everyone-content ul{
     padding-left: 2rem;

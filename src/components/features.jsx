@@ -32,7 +32,7 @@ const Features = () => {
         />
         <Card
           cardImg={CreateIfos}
-          cardHeading="Create IFOs, IDOs, etc."
+          cardHeading="Create IFOs & IDOs"
           cardContent="Raise funds, launch crypto projects, right here, no stress...  "
         />
         <Card

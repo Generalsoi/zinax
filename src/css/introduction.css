@@ -1,6 +1,9 @@
 .introduction{
     padding: 10% 5%;
     color: #fff;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .introduction-content-div{

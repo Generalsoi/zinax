@@ -1,23 +1,47 @@
 .card{
     width: 20rem;
     height: 15rem;
-    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
     text-align: center;
     padding: 2rem;
+    position: relative;
 }
 
 .card img{
-    width: 20%;
-}
-
-.card h4{
-    margin: 1rem 0;
-    font-size: 1.3rem;
-    font-weight: 600;
+    width:90%;
 }
 
 .card p{
     font-size: 0.9rem;
     font-weight: 400;
+}
+
+.image-div{
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #9747FF;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.5rem;
+    position: absolute;
+    top: -20%;
+    right: 35%;
+}
+
+
+/******************************************* Responsive Styling ***********************************************/
+@media screen and (max-width: 767px){
+    .card{
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .card{
+        margin-bottom: 5rem;
+    }
 }
