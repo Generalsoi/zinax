@@ -32,6 +32,15 @@ button{
     font-weight: 700;
 }
 
+.learnMore-btn-2{
+    background: linear-gradient(262.4deg, #FF017B -32.19%, #FF9900 107.24%);
+    border: 1px solid #FFFFFF;
+    width: 23rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 .cardBtn{
     width: 80%;
     height: 2.5rem;
@@ -47,14 +56,14 @@ button{
 
 
 @media screen and (max-width: 767px) {
-    .presale-btn, .learnMore-btn{
+    .presale-btn, .learnMore-btn, .learnMore-btn-2{
         width: 17rem;
         font-size: 1.5rem;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .presale-btn, .learnMore-btn{
+    .presale-btn, .learnMore-btn, .learnMore-btn-2{
         width: 19rem;
         font-size: 1.8rem;
     }

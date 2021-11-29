@@ -52,7 +52,7 @@ const Features = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Button buttonContent="Learn More" buttonStyles="learnMore-btn" />
+          <Button buttonContent="Learn More" buttonStyles="learnMore-btn-2" />
         </a>
       </div>
     </section>

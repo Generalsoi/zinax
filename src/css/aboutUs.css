@@ -1,6 +1,7 @@
 .about-us{
     padding: 5%;
     color: #961581;
+    background: linear-gradient(180deg, #F5F5F5 0%, rgba(255, 255, 255, 0.99) 17.71%);
 }
 
 .about-us h3{
