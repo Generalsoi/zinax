@@ -44,14 +44,18 @@
     font-weight: bold;
 }
 
-.roadmap-content .quarter-div .quarter:nth-child(odd){
+ .odd{
     background: #961581;
     color: #fff;
 }
 
-.roadmap-content .quarter-div .quarter:nth-child(even){
+ .even{
     background: #FFD601;
     color: #961581;
+}
+
+.roadmap-content .quarter-div .quarter-p{
+    width: 6rem;
 }
 
 /******************************************* Responsive Styling ***********************************************/

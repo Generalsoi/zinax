@@ -9,23 +9,24 @@ const Roadmap = () => {
       <div className="roadmap-content">
         <div>
           <div className="quarter-div">
-            <div className="quarter">
+            <div className="quarter odd">
               <p>Q3 21</p>
             </div>
           </div>
+
           <p>Ecosystem building, Farming and staking pools</p>
         </div>
         <div>
           <p>IDO, Project, CEX listing commences</p>
           <div className="quarter-div">
-            <div className="quarter">
+            <div className="quarter even">
               <p>Q1 22</p>
             </div>
           </div>
         </div>
         <div>
           <div className="quarter-div">
-            <div className="quarter">
+            <div className="quarter odd">
               <p>Q2 22</p>
             </div>
           </div>
@@ -37,7 +38,7 @@ const Roadmap = () => {
             Zinax
           </p>
           <div className="quarter-div">
-            <div className="quarter">
+            <div className="quarter even">
               <p>Q3 22</p>
             </div>
           </div>
