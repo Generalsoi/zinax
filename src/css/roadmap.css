@@ -19,11 +19,16 @@
 
 .roadmap-content{
     display: flex;
+    gap: 2rem;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    height: 25rem;
 }
 
 .roadmap-content .quarter-div{
-    width: 7rem;
-    height: 7rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 50%;
     border: 1px solid #fff;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
@@ -31,31 +36,105 @@
     padding: 0.45rem;
 }
 
-.roadmap-content .quarter{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    text-align: center;
-    padding: 2rem 0.5rem;
+/* .roadmap-content>div:nth-child(1) .quarter-div::before{
+    content: "";
+    border-right: none;
+    border-bottom: none;
+    position: absolute;
+    background: red;
+    width: 16rem;
+    height: 7rem;
+    bottom: 30%;
+    left: 1%;
+    z-index: 1;
 }
 
-.roadmap-content .quarter p{
+.roadmap-content>div:nth-child(1) .quarter-div::after{
+    content: "";
+    border: 5px solid #961581;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 50%;
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+    top: -5%;
+    left: 6%;
+    transform: rotate(45deg);
+    z-index: 0;
+} */
+
+.roadmap-content .quarter{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 4rem 0.5rem;
+}
+
+.roadmap-content-div .quarter p{
     font-size: 1.2rem;
     font-weight: bold;
 }
 
- .odd{
+.odd{
     background: #961581;
     color: #fff;
 }
 
- .even{
+.even{
     background: #FFD601;
     color: #961581;
+    
 }
 
-.roadmap-content .quarter-div .quarter-p{
-    width: 6rem;
+/* .first-roadmap-div{
+    position: absolute;
+    bottom: -15%;
+    left: 1%;
+}
+
+.second-roadmap-div{
+    position: absolute;
+    left: 20%;
+}
+
+.third-roadmap-div{
+    position: absolute;
+    bottom: -15%;
+}
+
+.last-roadmap-div{
+    position: absolute;
+    
+} */
+
+.roadmap-content-div{
+    width: 14rem;
+    height: 17rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.roadmap-content>div:nth-child(odd){
+    bottom: -36%;
+}
+
+.roadmap-content-div .quarter-p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    min-height: 8rem;
+}
+
+.roadmap-content>div:nth-child(2) .quarter-p{
+    display: flex;
+    align-items: flex-end;
+    max-width: 5rem;
+    justify-content: center;
 }
 
 /******************************************* Responsive Styling ***********************************************/
