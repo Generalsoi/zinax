@@ -1,5 +1,5 @@
 .roadmap{
-    padding: 5%;
+    padding: 7% 7% 15%;
     color: #961581;
     background: linear-gradient(180deg, #F5F5F5 0%, rgba(255, 255, 255, 0.99) 17.71%);
 }
@@ -35,6 +35,38 @@
     text-align: center;
     padding: 0.45rem;
 }
+
+.roadmap-ellipse-one{
+    position: absolute;
+    width: 17rem;
+    top: -15%;
+}
+
+.roadmap-ellipse-two{
+    position: absolute;
+    width: 15.5rem;
+    bottom: -35%;
+}
+
+.smallcircle{
+    position: absolute;
+    left: -17%;
+    top: 30%;
+}
+
+.smallcircle-one{
+    position: absolute;
+    right: -13%;
+    bottom: 7%;
+}
+
+.smallcircle-two{
+    position: absolute;
+    right: -17%;
+    top: 30%;
+    z-index: 2
+}
+
 
 /* .roadmap-content>div:nth-child(1) .quarter-div::before{
     content: "";
@@ -140,7 +172,8 @@
 /******************************************* Responsive Styling ***********************************************/
 @media screen and (max-width: 767px) {
     .roadmap{
-        padding: 5% 4%;
+        padding: 15% 4% 5%;
+        width: 100%;
     }
 
     .roadmap h3{
@@ -149,5 +182,64 @@
 
     .roadmap h3::after{
         width: 20%;
+    }
+
+    .roadmap-content{
+        height: 100rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .roadmap-content-div{
+        margin-bottom: 2rem;
+    }
+
+    .roadmap-content>div:nth-child(2){
+        margin-bottom: 10rem;
+    }
+
+    .roadmap-content>div:nth-child(odd){
+        bottom: 1%;
+    }
+
+    .roadmap-content-div .quarter-p{
+        font-size: 1rem;
+        min-height: 5rem;
+    }
+
+    .roadmap-ellipse-two{
+        position: absolute;
+        width: 15.5rem;
+        bottom: -20%;
+    }
+
+    .smallcircle-one{
+        bottom: 15%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .roadmap{
+        width: 100%;
+    }
+
+    .roadmap-content{
+        height: 70rem;
+    }
+
+    .roadmap-content>div:nth-child(odd){
+        bottom: -13%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .roadmap-content{
+        flex-wrap: wrap;
+        height: 70rem;
+    }
+
+    .roadmap-content>div:nth-child(odd){
+        bottom: -13%;
     }
 }

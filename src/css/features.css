@@ -33,7 +33,7 @@
 /******************************************* Responsive Styling ***********************************************/
 @media screen and (max-width: 767px) {
     .features{
-        padding: 5% 4%;
+        padding: 15% 4%;
     }
 
     .features h3{
