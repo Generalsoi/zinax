@@ -26,7 +26,7 @@ const AboutUs = () => {
             names and play-to-earn games that are based on real life situations.
           </p>
           <p>
-            <span>
+            <span class="second-span">
               Zinax is the revolution of the blockchain, from hype to real life.
             </span>
           </p>

@@ -33,17 +33,17 @@ const Navbar = (props) => {
             <div className={`nav-links-div ${navLinks}`}>
               <ul>
                 <li>
-                  <Link to="/features" className="nav-links">
+                  <Link to="/" className="nav-links">
                     Features
                   </Link>
                 </li>
                 <li>
-                  <Link to="" className="nav-links">
+                  <Link to="/" className="nav-links">
                     NFTs
                   </Link>
                 </li>
                 <li>
-                  <Link to="" className="nav-links">
+                  <Link to="/" className="nav-links">
                     DAO
                   </Link>
                 </li>

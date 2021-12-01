@@ -32,6 +32,10 @@
     color: #FBE200;
 }
 
+.about-us-content .second-span{
+    color: black;
+}
+
 .about-us-content h4{
     font-size: 2rem;
 }
