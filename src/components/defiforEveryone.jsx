@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/defiForEveryone.css";
-import BlockchainCube from "../images/cube.png";
+import BlockchainCube from "../assets/images/cube.png";
 
 const DefiForEveryone = () => {
   return (

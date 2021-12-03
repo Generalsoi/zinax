@@ -1,8 +1,8 @@
 import React from "react";
-import MediumIcon from "../images/medium.png";
-import TelegramIcon from "../images/telegram.png";
-import TwitterIcon from "../images/twitter.png";
-import GithubIcon from "../images/github.png";
+import MediumIcon from "../assets/images/medium.png";
+import TelegramIcon from "../assets/images/telegram.png";
+import TwitterIcon from "../assets/images/twitter.png";
+import GithubIcon from "../assets/images/github.png";
 import "../css/footer.css";
 import { Link } from "react-router-dom";
 

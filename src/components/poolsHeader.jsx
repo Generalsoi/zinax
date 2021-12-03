@@ -1,14 +1,14 @@
 import React from "react";
 import "../css/poolsHeader.css";
-import List from "../images/List.png";
-import Menu from "../images/Menu.png";
+import List from "../assets/images/List.png";
+import Menu from "../assets/images/Menu.png";
 
 const PoolsHeader = () => {
   return (
     <div className="pools-header">
       <div className="pools-header-content">
         <div className="pools-header-content-details">
-          <div>
+          <div className="listed-pools">
             <div>
               <p>Whitelisted</p>
             </div>
@@ -16,7 +16,8 @@ const PoolsHeader = () => {
               <p>Non-whitelisted</p>
             </div>
           </div>
-          <div>
+
+          <div className="live-or-finished-pools">
             <div>
               <p>Live</p>
             </div>

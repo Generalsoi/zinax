@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/tokenomics.css";
-import Bar from "../images/bar.png";
+import Bar from "../assets/images/bar.png";
 
 const Tokenomics = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import ZinaxLogo from "../images/zinaxcoin.png";
+import ZinaxLogo from "../assets/images/zinaxcoin.png";
 import Button from "../common/button";
 import "../css/introduction.css";
 import { Link } from "react-router-dom";

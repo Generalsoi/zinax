@@ -1,8 +1,8 @@
 import React from "react";
 import "../css/roadmap.css";
-import PurpleSemicircle from "../images/semicircle-purple.png";
-import YellowSemicircle from "../images/semicircle-yellow.png";
-import SmallCircle from "../images/smallcircle.png";
+import PurpleSemicircle from "../assets/images/semicircle-purple.png";
+import YellowSemicircle from "../assets/images/semicircle-yellow.png";
+import SmallCircle from "../assets/images/smallcircle.png";
 
 const Roadmap = () => {
   return (

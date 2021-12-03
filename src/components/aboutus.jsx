@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/aboutUs.css";
-import ZinaxLogo from "../images/zinaxcoin.png";
+import ZinaxLogo from "../assets/images/zinaxcoin.png";
 
 const AboutUs = () => {
   return (

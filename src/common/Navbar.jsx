@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/navbar.css";
-import ZinaxLogo from "../images/zinax-logo.png";
-import Breadcrumbs from "../images/breadcrumbs.png";
+import ZinaxLogo from "../assets/images/zinax-logo.png";
+import Breadcrumbs from "../assets/images/breadcrumbs.png";
 import Button from "./button";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,7 @@ const Navbar = (props) => {
 
   if (page === "0") {
     return (
-      <header>
+      <header className="header">
         <nav className="navbar">
           <div className="nav-logo">
             <img src={ZinaxLogo} alt="zinax-logo" />
@@ -78,7 +78,7 @@ const Navbar = (props) => {
     );
   } else {
     return (
-      <header>
+      <header className="header-2">
         <nav className="navbar">
           <div className="nav-logo">
             <img src={ZinaxLogo} alt="zinax-logo" />

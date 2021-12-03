@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "../common/card";
 import "../css/features.css";
-import CreateTokenImg from "../images/createtoken.png";
-import Crowdpooling from "../images/crowdpooling.png";
-import NftsAndMore from "../images/nftsandmore.png";
-import CreateIfos from "../images/createifos.png";
-import Liquidity from "../images/liquidity.png";
-import PredictAndEarn from "../images/predictandearn.png";
+import CreateTokenImg from "../assets/images/createtoken.png";
+import Crowdpooling from "../assets/images/crowdpooling.png";
+import NftsAndMore from "../assets/images/nftsandmore.png";
+import CreateIfos from "../assets/images/createifos.png";
+import Liquidity from "../assets/images/liquidity.png";
+import PredictAndEarn from "../assets/images/predictandearn.png";
 import Button from "../common/button";
 import { Link } from "react-router-dom";
 
