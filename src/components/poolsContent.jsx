@@ -1,11 +1,14 @@
 import React from "react";
-import "../css/poolsHeader.css";
+import "../css/poolsContent.css";
 import List from "../assets/images/List.png";
 import Menu from "../assets/images/Menu.png";
+import PoolsCard from "../common/poolsCard";
+import ZinaxLogo from "../assets/images/zinax-logo.png";
+import BinanceLogo from "../assets/images/binance-logo.png";
 
-const PoolsHeader = () => {
+const PoolsContent = () => {
   return (
-    <div className="pools-header">
+    <div className="pools-content">
       <div className="pools-header-content">
         <div className="pools-header-content-details">
           <div className="listed-pools">
@@ -29,8 +32,16 @@ const PoolsHeader = () => {
           </div>
         </div>
       </div>
+
+      <div className="pools-body">
+        <PoolsCard
+          tokenNames="ZINAX-BNB"
+          tokenImg1={ZinaxLogo}
+          tokenImg2={BinanceLogo}
+        />
+      </div>
     </div>
   );
 };
 
-export default PoolsHeader;
+export default PoolsContent;

@@ -1,0 +1,35 @@
+.pools-card{
+    width: 20rem;
+    height: 20rem;
+    background: #140517;
+    border-radius: 37px;
+    padding: 2rem;
+}
+
+.pools-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pools-card-header h3{
+    color: #FFD601;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.pools-card-header>div{
+    position: relative;
+    height: 5rem;
+    text-align: right;
+}
+
+.pools-card-header>div>img:first-child{
+    width: 80%;
+}
+
+.pools-card-header>div>img:last-child{
+    width: 30%;
+    position: absolute;
+    top: 0;
+}
