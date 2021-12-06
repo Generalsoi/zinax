@@ -38,6 +38,8 @@ const PoolsContent = () => {
           tokenNames="ZINAX-BNB"
           tokenImg1={ZinaxLogo}
           tokenImg2={BinanceLogo}
+          multiplier="40X"
+          aprValue="2.72%"
         />
       </div>
     </div>

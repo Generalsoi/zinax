@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .pools-card-header h3{
@@ -32,4 +33,23 @@
     width: 30%;
     position: absolute;
     top: 0;
+}
+
+.pools-multiplier-apr{
+    background: #6CBA74;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding: 2%;
+    border-radius: 36px;
+}
+
+.pools-multiplier-apr>div>p:first-child{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.pools-multiplier-apr>div>p:last-child{
+    font-size: 0.8rem;
 }
