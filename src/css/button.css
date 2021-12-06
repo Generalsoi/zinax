@@ -54,6 +54,24 @@ button{
     font-weight: 600;
 }
 
+.timeBasedButton, .timelessButton{
+    width: 8rem;
+    height: 2.5rem;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.timeBasedButton{
+    background: #C2A717;
+}
+
+.timelessButton{
+    background: #FFD601;
+}
+
 
 @media screen and (max-width: 767px) {
     .presale-btn, .learnMore-btn, .learnMore-btn-2{

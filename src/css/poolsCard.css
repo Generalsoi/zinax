@@ -1,6 +1,6 @@
 .pools-card{
     width: 20rem;
-    height: 20rem;
+    height: 21rem;
     background: #140517;
     border-radius: 37px;
     padding: 2rem;
@@ -30,7 +30,7 @@
 }
 
 .pools-card-header>div>img:last-child{
-    width: 30%;
+    width: 35%;
     position: absolute;
     top: 0;
 }
@@ -43,6 +43,7 @@
     width: 70%;
     padding: 2%;
     border-radius: 36px;
+    margin-bottom: 1rem;
 }
 
 .pools-multiplier-apr>div>p:first-child{
@@ -52,4 +53,28 @@
 
 .pools-multiplier-apr>div>p:last-child{
     font-size: 0.8rem;
+}
+
+.earned-tokens, .liquidity-amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.earned-tokens>h6, .liquidity-amount>h6{
+    font-size: 1rem;
+    color: #FFD601;
+}
+
+.earned-tokens>p, .liquidity-amount>p{
+    color: #9E9149;
+    font-weight: 300;
+}
+
+.time-buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
