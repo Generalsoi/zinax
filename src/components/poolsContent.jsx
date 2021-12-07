@@ -59,7 +59,15 @@ const PoolsContent = () => {
             liquidityValue="$780,344"
           />
         ) : (
-          <PoolsAccordion />
+          <PoolsAccordion
+            tokenNames="ZINAX-BNB"
+            tokenImg1={ZinaxLogo}
+            tokenImg2={BinanceLogo}
+            multiplier="40X"
+            aprValue="2.72%"
+            earnedValue="120"
+            liquidityValue="$780,344"
+          />
         )}
       </div>
     </div>

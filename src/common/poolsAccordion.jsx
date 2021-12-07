@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/poolsAccordion.css";
+import Button from "./button";
 
 const PoolsAccordion = (props) => {
+  const [isActive, setIsActive] = useState(false);
   const {
     tokenImg1,
     tokenImg2,
@@ -14,11 +16,14 @@ const PoolsAccordion = (props) => {
   return (
     <div className="pools-accordion">
       <div className="pools-accordion-item">
-        <div className="pools-accordion-title">
+        <div
+          className="pools-accordion-title"
+          onClick={() => setIsActive(!isActive)}
+        >
           <div className="pools-accorrdion-header">
             <div className="images">
-              <img src={tokenImg1} alt="token-one" />
               <img src={tokenImg2} alt="token-two" />
+              <img src={tokenImg1} alt="token-one" />
             </div>
             <h3>{tokenNames}</h3>
           </div>
@@ -43,8 +48,37 @@ const PoolsAccordion = (props) => {
             <p>{multiplier}</p>
           </div>
         </div>
+        {isActive && (
+          <div className="pools-accordion-content">
+            <div>
+              <a href="#" target="_blank" rel="noreferrer">
+                Buy {tokenNames} LP
+              </a>
+              <a href="#" target="_blank" rel="noreferrer">
+                Preview Contract
+              </a>
+              <a href="#" target="_blank" rel="noreferrer">
+                See Pair Details
+              </a>
+            </div>
 
-        <div className="pools-accordion-content"></div>
+            <div>
+              <div>
+                <h6>Earned</h6>
+                <p>{earnedValue}</p>
+              </div>
+              <Button buttonContent="withdraw" buttonStyles="withdraw-btn" />
+            </div>
+
+            <div>
+              <Button
+                buttonContent="Time Based"
+                buttonStyles="timeBasedButton"
+              />
+              <Button buttonContent="Timeless" buttonStyles="timelessButton" />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
