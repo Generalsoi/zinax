@@ -83,6 +83,16 @@ button{
     font-size: 1.1rem;
 }
 
+.connect-btn{
+    background: #FFD601;
+    color: #fff;
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
 
 @media screen and (max-width: 767px) {
     .presale-btn, .learnMore-btn, .learnMore-btn-2{

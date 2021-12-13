@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/navbar.css";
 import ZinaxLogo from "../assets/images/zinax-logo.png";
-import Breadcrumbs from "../assets/images/breadcrumbs.png";
 import Button from "./button";
 import { Link } from "react-router-dom";
 
@@ -93,6 +92,11 @@ const Navbar = (props) => {
               <ul>
                 <li>
                   <Link to="" className="nav-links">
+                    Farms
+                  </Link>
+                </li>
+                <li>
+                  <Link to="" className="nav-links">
                     Pools
                   </Link>
                 </li>
@@ -114,18 +118,13 @@ const Navbar = (props) => {
               </ul>
 
               <div className="connect-breadcrumbs-div">
-                <div className="connect-div">
+                {/* <div className="connect-div">
                   <p>Connect</p>
                   <div className="bsc-div">
                     <p>BSC</p>
                   </div>
-                </div>
-
-                <img
-                  className="breadcrumbs-img"
-                  src={Breadcrumbs}
-                  alt="breadcrumbs"
-                />
+                </div> */}
+                <Button buttonContent="Connect" buttonStyles="connect-btn" />
               </div>
             </div>
           ) : (
