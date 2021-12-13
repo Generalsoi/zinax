@@ -4,6 +4,7 @@
     background: #140517;
     border-radius: 37px;
     padding: 2rem;
+    margin-bottom: 3rem;
 }
 
 .pools-card-header{
@@ -77,4 +78,18 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+/*****************************************/
+/*** Responsive Design *******************/
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
 }

@@ -7,7 +7,7 @@ import PoolsAccordion from "../common/poolsAccordion";
 import ZinaxLogo from "../assets/images/zinax-logo.png";
 import BinanceLogo from "../assets/images/binance-logo.png";
 
-const PoolsContent = () => {
+const FarmsContent = () => {
   const [viewState, setViewState] = useState(1);
   const dummyData = [
     {
@@ -38,7 +38,7 @@ const PoolsContent = () => {
       liquidityValue: "$990,433",
     },
     {
-      tokenNames: "ZINAX-BUSD",
+      tokenNames: "ZINAX-USDT",
       tokenImg1: ZinaxLogo,
       tokenImg2: BinanceLogo,
       multiplier: "65X",
@@ -117,7 +117,7 @@ const PoolsContent = () => {
 
               dummyData.map((data) => (
                 <PoolsAccordion
-                  key={data.keyNames}
+                  key={data.tokenNames}
                   tokenNames={data.tokenNames}
                   tokenImg1={data.tokenImg1}
                   tokenImg2={data.tokenImg2}
@@ -143,4 +143,4 @@ const PoolsContent = () => {
   );
 };
 
-export default PoolsContent;
+export default FarmsContent;
