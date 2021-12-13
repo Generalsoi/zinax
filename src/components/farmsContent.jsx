@@ -38,7 +38,7 @@ const FarmsContent = () => {
       liquidityValue: "$990,433",
     },
     {
-      tokenNames: "ZINAX-USDT",
+      tokenNames: "ZINAX-BUSD",
       tokenImg1: ZinaxLogo,
       tokenImg2: BinanceLogo,
       multiplier: "65X",
