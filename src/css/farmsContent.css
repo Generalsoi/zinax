@@ -106,7 +106,7 @@
         gap: 20px;
         align-items: flex-start;
     }
-
+/* 
     .listed-farms>div:first-child{
         width: 6rem;
         padding-top: 2%;
@@ -122,7 +122,7 @@
 
     .listed-farms>div p{
         font-size: 0.8rem;
-    }
+    } */
 
     .live-or-finished-farms{
         justify-content: space-around;
@@ -134,11 +134,12 @@
 
     .live-or-finished-farms>div:first-child{
         left: 0;
+        z-index: 2;
     }
 
     .live-or-finished-farms>div:nth-child(2){
         position: relative;
-        right: 13%;
+        right: 16%;
     }
 
     .live-or-finished-farms>div p{
