@@ -93,6 +93,25 @@ button{
     font-weight: 700;
 }
 
+.farms-connect-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 9rem;
+    height: 2.8rem;
+    color: #4B0057;
+    background: #FFD601;
+    font-size: 1rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 20px;
+}
+
+.farms-connect-btn .connect-img{
+    width: 20%;
+}
+
 
 @media screen and (max-width: 767px) {
     .presale-btn, .learnMore-btn, .learnMore-btn-2{
