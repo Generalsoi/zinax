@@ -74,6 +74,7 @@
 
 .farms-header-content-details span{
     color: #FFD601;
+    cursor: text;
 }
 
 .farms-body{
