@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/poolsContent.css";
+import "../css/farmsContent.css";
 import List from "../assets/images/List.png";
 import Menu from "../assets/images/Menu.png";
 import PoolsCard from "../common/poolsCard";
@@ -49,25 +49,21 @@ const FarmsContent = () => {
   ];
 
   return (
-    <div className="pools-content">
-      <div className="pools-header-content">
-        <div className="pools-header-content-details">
-          <div className="listed-pools">
-            {/* <div>
-              <p>Whitelisted</p>
-            </div>
-            <div>
-              <p>Non-whitelisted</p>
-            </div> */}
-          </div>
-
-          <div className="live-or-finished-pools">
+    <div className="farms-content">
+      <div className="farms-header-content">
+        <div className="farms-header-content-details">
+          <div className="live-or-finished-farms">
             <div>
               <p>Live</p>
             </div>
             <div>
               <p>Finished</p>
             </div>
+          </div>
+          <span>
+            <p>Earn Zinax as you Stake Liquidity Pool Tokens here</p>
+          </span>
+          <div>
             <img
               src={List}
               alt="list"
@@ -87,8 +83,8 @@ const FarmsContent = () => {
       </div>
 
       <div
-        className={`pools-body ${
-          viewState ? "pools-card-view" : "pools-accordion-view"
+        className={`farms-body ${
+          viewState ? "farms-card-view" : "farms-accordion-view"
         }`}
       >
         {

@@ -208,6 +208,7 @@ const Navbar = (props) => {
                   buttonStyles="farms-connect-btn"
                   btnSideImg={ConnectImg}
                   btnSideImgClassName="connect-img"
+                  btnSideImgAlt="connect"
                   onClick=""
                 />
               </div>
