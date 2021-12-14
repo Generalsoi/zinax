@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import ConnectImg from "../assets/images/connectImg.png";
 
 const Navbar = (props) => {
-  const [navLinks, setNavLinks] = useState(1);
+  const [navLinks, setNavLinks, onClickConnect] = useState(1);
 
   useEffect(() => {
     const windSize = window.innerWidth;
@@ -15,7 +15,8 @@ const Navbar = (props) => {
     }
   }, []);
 
-  const { page } = props;
+  const { page, setShow } = props;
+  console.log();
 
   if (page === "0") {
     return (
@@ -209,7 +210,7 @@ const Navbar = (props) => {
                   btnSideImg={ConnectImg}
                   btnSideImgClassName="connect-img"
                   btnSideImgAlt="connect"
-                  onClick=""
+                  setShow={setShow}
                 />
               </div>
             </div>

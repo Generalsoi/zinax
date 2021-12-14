@@ -7,7 +7,7 @@ import PoolsContent from "./../components/poolsContent";
 const Pools = () => {
   return (
     <div className="pools">
-      <Navbar page="1" />
+      <Navbar />
       <PoolsIntroduction />
       <PoolsContent />
     </div>
