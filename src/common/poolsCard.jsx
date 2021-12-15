@@ -41,8 +41,7 @@ const PoolsCard = (props) => {
         <p>{liquidityValue}</p>
       </div>
       <div className="time-buttons">
-        <Button buttonContent="Time Based" buttonStyles="timeBasedButton" />
-        <Button buttonContent="Timeless" buttonStyles="timelessButton" />
+        <Button buttonContent="Stake Now" buttonStyles="stakeNowButton" />
       </div>
     </div>
   );

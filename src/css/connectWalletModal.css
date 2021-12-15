@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 2;
+    z-index: 4;
 }
 
 .modal-content{
@@ -16,4 +16,56 @@
     width: 30%;
     height: 30rem;
     border-radius: 41px;
+    padding: 2rem 0;
+}
+
+.modal-header{
+    text-align: center;
+}
+
+.modal-header h5{
+    color: #FFD601;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.modal-body>ul>li{
+    list-style: none;
+    border-top: 1px solid #7B7B7B;
+    border-bottom: 1px solid #7B7B7B;
+    padding: 3% 8%;
+}
+
+.modal-body>ul>li>div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.modal-body>ul>li>div img{
+    width: 10%;
+}
+
+.modal-body>ul>li>div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/*****************************************/
+/*** Responsive Design *******************/
+@media screen and (max-width: 767px) {
+    .modal-content{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
 }

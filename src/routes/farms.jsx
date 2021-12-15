@@ -7,10 +7,6 @@ import ConnectWalletModal from "../modals/connectWalletModal";
 const Farms = () => {
   const [show, setShow] = useState(false);
 
-  //   const handleClickConnect = () => {
-  //     () => setShow(false);
-  //   };
-
   return (
     <div className="farms">
       <Navbar setShow={setShow} />

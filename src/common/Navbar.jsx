@@ -16,7 +16,6 @@ const Navbar = (props) => {
   }, []);
 
   const { page, setShow } = props;
-  console.log();
 
   if (page === "0") {
     return (
@@ -210,7 +209,7 @@ const Navbar = (props) => {
                   btnSideImg={ConnectImg}
                   btnSideImgClassName="connect-img"
                   btnSideImgAlt="connect"
-                  setShow={setShow}
+                  onClick={() => setShow(true)}
                 />
               </div>
             </div>

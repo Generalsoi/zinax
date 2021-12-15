@@ -64,6 +64,17 @@ button{
     font-weight: 600;
 }
 
+.stakeNowButton{
+    width: 12rem;
+    height: 2.5rem;
+    color: #fff;
+    background: #6CBA74;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
 .timeBasedButton{
     background: #C2A717;
 }

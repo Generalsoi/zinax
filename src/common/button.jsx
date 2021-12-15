@@ -15,7 +15,7 @@ const Button = (props) => {
   return (
     <React.Fragment>
       <div>
-        <button className={buttonStyles} onClick={() => setShow(true)}>
+        <button className={buttonStyles}>
           {buttonContent}
           <img
             className={btnSideImgClassName}
