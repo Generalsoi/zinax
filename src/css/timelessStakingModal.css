@@ -1,0 +1,48 @@
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+  }
+
+.timeless-staking .modal-content{
+    background: #2C0630;
+    width: 28%;
+    height: 30rem;
+    border-radius: 41px;
+    padding: 2rem ;
+}
+
+.timeless-staking .modal-header{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.timeless-staking .modal-body{
+    text-align: center;
+}
+
+.timeless-staking .modal-body form{
+    margin-top: 2rem;
+}
+
+.timeless-staking .modal-body form>div{
+    margin-bottom: 2rem;
+}
+
+.timeless-staking .modal-body form>div input{
+    background: #F1F1F1;
+    border-radius: 18px;
+    border: none;
+    width: 80%;
+    height: 2.5rem;
+    padding-left: 2rem;
+}

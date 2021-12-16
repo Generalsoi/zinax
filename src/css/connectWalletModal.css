@@ -11,7 +11,7 @@
     z-index: 4;
 }
 
-.modal-content{
+.connectWallet .modal-content{
     background: #2C0630;
     width: 30%;
     height: 30rem;
@@ -19,7 +19,7 @@
     padding: 2rem 0;
 }
 
-.modal-header{
+.connectWallet .modal-header{
     text-align: center;
 }
 

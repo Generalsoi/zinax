@@ -13,7 +13,7 @@ const ConnectWalletModal = (props) => {
   }
 
   return (
-    <div className="modal" onClick={() => setShow(false)}>
+    <div className="modal connectWallet" onClick={() => setShow(false)}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h5>Connect a wallet</h5>

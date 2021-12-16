@@ -15,6 +15,7 @@ const FarmsCard = (props) => {
     earnedValue,
     liquidityValue,
     viewState,
+    setShow,
   } = props;
   return (
     <div className="pools-card">
@@ -44,8 +45,11 @@ const FarmsCard = (props) => {
         <p>{liquidityValue}</p>
       </div>
       <div className="time-buttons">
-        <Button buttonContent="Time Based" buttonStyles="timeBasedButton" />
-        <Button buttonContent="Timeless" buttonStyles="timelessButton" />
+        <Button
+          buttonContent="Stake Now"
+          buttonStyles="stakeNowButton"
+          setShow={setShow}
+        />
       </div>
     </div>
   );

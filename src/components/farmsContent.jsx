@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import "../css/farmsContent.css";
 import List from "../assets/images/List.png";
 import Menu from "../assets/images/Menu.png";
-import PoolsCard from "../common/poolsCard";
-import PoolsAccordion from "../common/poolsAccordion";
 import ZinaxLogo from "../assets/images/zinax-logo.png";
 import BinanceLogo from "../assets/images/binance-logo.png";
+import FarmsCard from "./../common/farmsCard";
+import FarmsAccordion from "./../common/farmsAccordion";
+import TimelessStaking from "./../modals/timelessStakingModal";
 
 const FarmsContent = () => {
   const [viewState, setViewState] = useState(1);
+  const [show, setShow] = useState(false);
   const dummyData = [
     {
       tokenNames: "ZINAX-BNB",
@@ -90,7 +92,7 @@ const FarmsContent = () => {
         {
           viewState
             ? dummyData.map((data) => (
-                <PoolsCard
+                <FarmsCard
                   key={data.tokenNames}
                   tokenNames={data.tokenNames}
                   tokenImg1={data.tokenImg1}
@@ -99,6 +101,7 @@ const FarmsContent = () => {
                   aprValue={data.aprValue}
                   earnedValue={data.earnedValue}
                   liquidityValue={data.liquidityValue}
+                  setShow={setShow}
                 />
               ))
             : // <PoolsCard
@@ -112,7 +115,7 @@ const FarmsContent = () => {
               // />
 
               dummyData.map((data) => (
-                <PoolsAccordion
+                <FarmsAccordion
                   key={data.tokenNames}
                   tokenNames={data.tokenNames}
                   tokenImg1={data.tokenImg1}
@@ -135,6 +138,7 @@ const FarmsContent = () => {
           // />
         }
       </div>
+      <TimelessStaking show={show} setShow={setShow} />
     </div>
   );
 };

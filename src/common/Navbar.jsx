@@ -209,7 +209,7 @@ const Navbar = (props) => {
                   btnSideImg={ConnectImg}
                   btnSideImgClassName="connect-img"
                   btnSideImgAlt="connect"
-                  onClick={() => setShow(true)}
+                  setShow={setShow}
                 />
               </div>
             </div>
