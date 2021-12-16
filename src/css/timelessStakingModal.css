@@ -42,7 +42,48 @@
     background: #F1F1F1;
     border-radius: 18px;
     border: none;
-    width: 80%;
+    width: 60%;
     height: 2.5rem;
     padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.timeless-staking .modal-body form>div input::placeholder{
+    color: #D2D2D2;
+    font-size: 0.8rem;
+    font-family: Poppins;
+}
+
+.timeless-staking .modal-footer{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.timeless-staking .modal-footer button{
+    background: #6CBA74;
+    border-radius: 35.5px;
+    width: 80%;
+    height: 2.7rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Poppins;
+}
+
+
+
+/*****************************************/
+/*** Responsive Design *******************/
+@media screen and (max-width: 767px) {
+    .timeless-staking .modal-content{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
 }

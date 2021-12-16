@@ -23,30 +23,30 @@
     text-align: center;
 }
 
-.modal-header h5{
+.connectWallet .modal-header h5{
     color: #FFD601;
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.modal-body>ul>li{
+.connectWallet .modal-body>ul>li{
     list-style: none;
     border-top: 1px solid #7B7B7B;
     border-bottom: 1px solid #7B7B7B;
     padding: 3% 8%;
 }
 
-.modal-body>ul>li>div{
+.connectWallet .modal-body>ul>li>div{
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.modal-body>ul>li>div img{
+.connectWallet .modal-body>ul>li>div img{
     width: 10%;
 }
 
-.modal-body>ul>li>div a{
+.connectWallet .modal-body>ul>li>div a{
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
@@ -57,15 +57,21 @@
 /*****************************************/
 /*** Responsive Design *******************/
 @media screen and (max-width: 767px) {
-    .modal-content{
+    .connectWallet .modal-content{
         width: 100%;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    
+    .connectWallet .modal-content{
+        width: 70%;
+        height: 35rem;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    
+    .connectWallet .modal-content{
+        width: 70%;
+        height: 45rem;
+    }
 }
