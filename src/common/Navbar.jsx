@@ -49,7 +49,8 @@ const Navbar = (props) => {
                 </li>
                 <li>
                   <Link to="/pools">
-                    <Button buttonStyles="nav-btn" buttonContent="Pools" />
+                    <button className="nav-btn">Pools</button>
+                    {/* <Button buttonStyles="nav-btn" buttonContent="Pools" /> */}
                   </Link>
                 </li>
               </ul>
