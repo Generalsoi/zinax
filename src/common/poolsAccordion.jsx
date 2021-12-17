@@ -22,7 +22,6 @@ const PoolsAccordion = (props) => {
         >
           <div className="pools-accorrdion-header">
             <div className="images">
-              <img src={tokenImg2} alt="token-two" />
               <img src={tokenImg1} alt="token-one" />
             </div>
             <h3>{tokenNames}</h3>

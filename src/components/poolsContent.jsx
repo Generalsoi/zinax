@@ -13,7 +13,6 @@ const PoolsContent = () => {
     {
       tokenNames: "ZINAX-BNB",
       tokenImg1: ZinaxLogo,
-      tokenImg2: BinanceLogo,
       multiplier: "40X",
       aprValue: "2.72%",
       earnedValue: "120",
@@ -22,7 +21,6 @@ const PoolsContent = () => {
     {
       tokenNames: "BUSD-BNB",
       tokenImg1: ZinaxLogo,
-      tokenImg2: BinanceLogo,
       multiplier: "50X",
       aprValue: "2.95%",
       earnedValue: "145",
@@ -40,7 +38,6 @@ const PoolsContent = () => {
     {
       tokenNames: "ZINAX-BUSD",
       tokenImg1: ZinaxLogo,
-      tokenImg2: BinanceLogo,
       multiplier: "65X",
       aprValue: "4.76%",
       earnedValue: "198",
@@ -98,7 +95,6 @@ const PoolsContent = () => {
                   key={data.tokenNames}
                   tokenNames={data.tokenNames}
                   tokenImg1={data.tokenImg1}
-                  tokenImg2={data.tokenImg2}
                   multiplier={data.multiplier}
                   aprValue={data.aprValue}
                   earnedValue={data.earnedValue}

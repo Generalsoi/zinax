@@ -15,11 +15,10 @@ const PoolsCard = (props) => {
   } = props;
   return (
     <div className="pools-card">
-      <div className="pools-card-header">
+      <div className="just-pools-card-header">
         <h3>{tokenNames}</h3>
         <div>
           <img src={tokenImg1} alt="" />
-          <img src={tokenImg2} alt="" />
         </div>
       </div>
       <div className="pools-multiplier-apr">

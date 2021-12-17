@@ -37,6 +37,29 @@
     top: 0;
 }
 
+.just-pools-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.just-pools-card-header h3{
+    color: #FFD601;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.just-pools-card-header>div{
+    position: relative;
+    height: 5rem;
+    text-align: right;
+}
+
+.just-pools-card-header>div>img{
+    width: 80%;
+}
+
 .pools-multiplier-apr{
     background: #6CBA74;
     color: #fff;

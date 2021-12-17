@@ -81,9 +81,13 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    
+    .timeless-staking .modal-content{
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    
+    .timeless-staking .modal-content{
+        width: 70%;
+    }
 }
