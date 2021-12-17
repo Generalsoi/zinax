@@ -16,9 +16,13 @@ const FarmsCard = (props) => {
     liquidityValue,
     viewState,
     setShow,
+    stakeType,
   } = props;
   return (
     <div className="pools-card">
+      <div className="stake-type">
+        <p>{stakeType}</p>
+      </div>
       <div className="pools-card-header">
         <h3>{tokenNames}</h3>
         <div>
@@ -49,6 +53,7 @@ const FarmsCard = (props) => {
           buttonContent="Stake Now"
           buttonStyles="stakeNowButton"
           setShow={setShow}
+          stakeType={stakeType}
         />
       </div>
     </div>

@@ -50,6 +50,32 @@
 }
 
 
+.farms-and-pools-footer{
+    text-align: center;
+    padding: 5%;
+    background: url("../assets/images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.farms-and-pools-footer div ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.farms-and-pools-footer div ul>li{
+    list-style-type: none;
+}
+
+.farms-and-pools-footer div ul li>a{
+    text-decoration: none;
+    color: #FBE200;
+}
+
 
 
 

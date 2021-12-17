@@ -5,6 +5,7 @@
     border-radius: 37px;
     padding: 2rem;
     margin-bottom: 3rem;
+    position: relative;
 }
 
 .pools-card-header{
@@ -78,6 +79,19 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.stake-type{
+    position: absolute;
+}
+
+.stake-type p{
+    width: 100%;
+    height: 1.5rem;
+    background: #FFD601;
+    color: #4B0057;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
 /*****************************************/

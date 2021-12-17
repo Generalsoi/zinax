@@ -7,10 +7,12 @@ import BinanceLogo from "../assets/images/binance-logo.png";
 import FarmsCard from "./../common/farmsCard";
 import FarmsAccordion from "./../common/farmsAccordion";
 import TimelessStaking from "./../modals/timelessStakingModal";
+import TimeBasedStake from "./../modals/timeBasedStakingModal";
 
 const FarmsContent = () => {
   const [viewState, setViewState] = useState(1);
   const [show, setShow] = useState(false);
+
   const dummyData = [
     {
       tokenNames: "ZINAX-BNB",
@@ -29,6 +31,7 @@ const FarmsContent = () => {
       aprValue: "2.95%",
       earnedValue: "145",
       liquidityValue: "$980,354",
+      stakeType: "timebased stake",
     },
     {
       tokenNames: "ZINAX-USDT",
@@ -49,6 +52,9 @@ const FarmsContent = () => {
       liquidityValue: "$99,433",
     },
   ];
+
+  const stakeType = dummyData.stakeType;
+  console.log(stakeType);
 
   return (
     <div className="farms-content">
@@ -101,6 +107,7 @@ const FarmsContent = () => {
                   aprValue={data.aprValue}
                   earnedValue={data.earnedValue}
                   liquidityValue={data.liquidityValue}
+                  stakeType={data.stakeType}
                   setShow={setShow}
                 />
               ))
@@ -138,7 +145,11 @@ const FarmsContent = () => {
           // />
         }
       </div>
-      <TimelessStaking show={show} setShow={setShow} />
+      {stakeType === "timebased-stake" ? (
+        <TimeBasedStake show={show} setShow={setShow} />
+      ) : (
+        <TimelessStaking show={show} setShow={setShow} />
+      )}
     </div>
   );
 };
