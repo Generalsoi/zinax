@@ -76,12 +76,34 @@ button{
 }
 
 .stakeNowButton{
-    width: 12rem;
+    width: 8rem;
     height: 2.5rem;
     color: #fff;
     background: #6CBA74;
     border: none;
     border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.withdrawButton{
+    width: 8rem;
+    height: 2.5rem;
+    color: #fff;
+    background: #2F2036;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.harvestButton{
+    width: 8rem;
+    height: 2.8rem;
+    color: #fff;
+    background: #4B0057;
+    border: none;
+    border-radius: 18px;
     font-size: 0.9rem;
     font-weight: 600;
 }

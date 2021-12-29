@@ -16,13 +16,9 @@ const FarmsCard = (props) => {
     liquidityValue,
     viewState,
     setShow,
-    stakeType,
   } = props;
   return (
     <div className="pools-card">
-      <div className="stake-type">
-        <p>{stakeType}</p>
-      </div>
       <div className="pools-card-header">
         <h3>{tokenNames}</h3>
         <div>
@@ -41,8 +37,15 @@ const FarmsCard = (props) => {
         </div>
       </div>
       <div className="earned-tokens">
-        <h6>Earned</h6>
-        <p>{earnedValue}</p>
+        <div>
+          <h6>Earned</h6>
+          <p>{earnedValue}</p>
+        </div>
+        <Button
+          buttonContent="Harvest"
+          buttonStyles="harvestButton"
+          setShow={setShow}
+        />
       </div>
       <div className="liquidity-amount">
         <h6>Liquidity</h6>
@@ -50,10 +53,14 @@ const FarmsCard = (props) => {
       </div>
       <div className="time-buttons">
         <Button
-          buttonContent="Stake Now"
+          buttonContent="Stake"
           buttonStyles="stakeNowButton"
           setShow={setShow}
-          stakeType={stakeType}
+        />
+        <Button
+          buttonContent="Withdraw"
+          buttonStyles="withdrawButton"
+          setShow={setShow}
         />
       </div>
     </div>

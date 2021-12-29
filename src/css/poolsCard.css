@@ -1,6 +1,6 @@
 .pools-card{
     width: 20rem;
-    height: 21rem;
+    height: 23rem;
     background: #140517;
     border-radius: 37px;
     padding: 2rem;
@@ -87,7 +87,7 @@
     margin-bottom: 1rem;
 }
 
-.earned-tokens>h6, .liquidity-amount>h6{
+.earned-tokens>div h6, .liquidity-amount>h6{
     font-size: 1rem;
     color: #FFD601;
 }

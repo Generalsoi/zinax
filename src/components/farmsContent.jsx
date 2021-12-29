@@ -31,7 +31,6 @@ const FarmsContent = () => {
       aprValue: "2.95%",
       earnedValue: "145",
       liquidityValue: "$980,354",
-      stakeType: "timebased stake",
     },
     {
       tokenNames: "ZINAX-USDT",
