@@ -3,6 +3,7 @@ import "../css/navbar.css";
 import ZinaxLogo from "../assets/images/zinax-logo.png";
 import Button from "./button";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ConnectImg from "../assets/images/connectImg.png";
 
 const Navbar = (props) => {
@@ -93,29 +94,29 @@ const Navbar = (props) => {
             <div className={`nav-links-div ${navLinks}`}>
               <ul>
                 <li>
-                  <Link to="/farms" className="nav-links">
+                <NavLink to="/farms" className={({ isActive }) => (isActive ? 'nav-links-active' : 'nav-links-inactive')}>
                     Farms
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/pools" className="nav-links">
+                <NavLink to="/pools" className={({ isActive }) => (isActive ? 'nav-links-active' : 'nav-links-inactive')}>
                     Pools
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/services" className="nav-links">
+                <NavLink to="/services" className={({ isActive }) => (isActive ? 'nav-links-active' : 'nav-links-inactive')}>
                     Services
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="" className="nav-links">
+                <NavLink to="/nfts" className={({ isActive }) => (isActive ? 'nav-links-active' : 'nav-links-inactive')}>
                     NFTs
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="" className="nav-links">
+                <NavLink to="/dao" className={({ isActive }) => (isActive ? 'nav-links-active' : 'nav-links-inactive')}>
                     DAO
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
 
@@ -171,29 +172,29 @@ const Navbar = (props) => {
             <div className={`nav-links-div ${navLinks}`}>
               <ul>
                 <li>
-                  <Link to="/farms" className="nav-links">
+                  <NavLink to="/farms" className={({ isActive }) => (isActive ? 'nav-links-active' : 'nav-links-inactive')}>
                     Farms
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/pools" className="nav-links">
+                  <NavLink to="/pools" className={({ isActive }) => (isActive ? 'nav-links-active' : 'nav-links-inactive')}>
                     Pools
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/services" className="nav-links">
+                  <NavLink to="/services" className={({ isActive }) => (isActive ? 'nav-links-active' : 'nav-links-inactive')}>
                     Services
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="" className="nav-links">
+                  <NavLink to="/nfts" className={({ isActive }) => (isActive ? 'nav-links-active' : 'nav-links-inactive')}>
                     NFTs
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="" className="nav-links">
+                  <NavLink to="/dao" className={({ isActive }) => (isActive ? 'nav-links-active' : 'nav-links-inactive')}>
                     DAO
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
 
