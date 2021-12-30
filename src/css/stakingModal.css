@@ -1,0 +1,195 @@
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+  }
+
+.timeless-staking .modal-content{
+    background: #2C0630;
+    width: 40%;
+    height: 33rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    /* border-radius: 41px; */
+    /* padding: 2rem ; */
+}
+
+.timeless-staking .modal-header{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.timeless-staking .modal-header .button{
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+.timeless-staking .modal-header button{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    background: #4B0057;
+    border-radius: 0px;
+    width: 50%;
+    height: 2.7rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Poppins;
+}
+
+.timeless-staking .modal-header button:focus{
+    background: #6CBA74;
+}
+
+.timeless-staking .modal-body{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.timeless-staking .modal-body>form{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.timeless-staking .modal-body form .amount{
+    margin-top: 1rem;
+}
+
+.timeless-staking .modal-body form .amount input{
+    background: #F1F1F1;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border: none;
+    width: 40%;
+    height: 2rem;
+    padding-left: 2rem;
+}
+
+.timeless-staking .modal-body form .amount>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.timeless-staking .modal-body form .amount>div>button{
+    height: 2.1rem;
+    width: 4rem;
+    background:#4B0057;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.timeless-staking .modal-body form .amount input::placeholder{
+    color: #D2D2D2;
+    font-size: 0.8rem;
+    font-family: Poppins;
+}
+
+.timeless-staking .modal-body form .duration{
+    margin-top: 1rem;
+}
+
+.timeless-staking .modal-body form .duration input{
+    width: 53%;
+    height: 2rem;
+    border-radius: 18px;
+    background: #F1F1F1; 
+    border: none; 
+    padding-left: 5%;  
+}
+
+.timeless-staking .modal-body form .duration input::placeholder{
+    font-size: 0.8rem;
+    font-family: Poppins;
+    color: #D2D2D2;
+}
+
+.timeless-staking .modal-footer{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.timeless-staking .modal-footer button{
+    background: #6CBA74;
+    border-radius: 35.5px;
+    width: 30%;
+    height: 2.7rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Poppins;
+}
+
+.timeless-staking .modal-body .balance-div{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.timeless-staking .modal-body .balance-div .balance-value{
+    color: #fff;
+}
+
+.timeless-staking .modal-body .balance-div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 20px;
+    width: 12rem;
+    height: 3rem;
+    background: #FFD601;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.timeless-staking .modal-body .balance-div p{
+    color: #4B0057;
+    font-size: 1.2rem;
+}
+
+.timeless-staking .modal-body .balance-div img{
+    width: 25%;
+}
+
+
+/*****************************************/
+/*** Responsive Design *******************/
+@media screen and (max-width: 767px) {
+    .timeless-staking .modal-content{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .timeless-staking .modal-content{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .timeless-staking .modal-content{
+        width: 70%;
+    }
+}

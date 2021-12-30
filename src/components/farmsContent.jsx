@@ -6,8 +6,7 @@ import ZinaxLogo from "../assets/images/zinax-logo.png";
 import BinanceLogo from "../assets/images/binance-logo.png";
 import FarmsCard from "./../common/farmsCard";
 import FarmsAccordion from "./../common/farmsAccordion";
-import TimelessStaking from "./../modals/timelessStakingModal";
-import TimeBasedStake from "./../modals/timeBasedStakingModal";
+import StakeModal from "./../modals/stakeModal";
 
 const FarmsContent = () => {
   const [viewState, setViewState] = useState(1);
@@ -144,11 +143,12 @@ const FarmsContent = () => {
           // />
         }
       </div>
-      {stakeType === "timebased-stake" ? (
-        <TimeBasedStake show={show} setShow={setShow} />
+      <StakeModal show={show} setShow={setShow} balance="XXXXXXXXXXXX" />
+      {/* {stakeType === "timebased-stake" ? (
+        <StakeModal show={show} setShow={setShow} />
       ) : (
-        <TimelessStaking show={show} setShow={setShow} />
-      )}
+        <StakeModal show={show} setShow={setShow} />
+      )} */}
     </div>
   );
 };
