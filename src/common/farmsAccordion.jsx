@@ -70,7 +70,7 @@ const FarmsAccordion = (props) => {
               <Button buttonContent="withdraw" buttonStyles="withdraw-btn" />
             </div>
 
-            <div>
+            <div className="container">
               <Button
                 buttonContent="Stake More"
                 buttonStyles="stakeMoreButton"
