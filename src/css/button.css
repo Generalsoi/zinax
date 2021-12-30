@@ -54,16 +54,32 @@ button{
     font-weight: 600;
 }
 
+@media screen and (min-width: 768px) {
 .timeBasedButton, .timelessButton{
-    width: 8rem;
+    width: 100%;
     height: 2.5rem;
     color: #fff;
     border-radius: 20px;
     border: none;
     font-size: 0.9rem;
     font-weight: 600;
+    margin-right: 50px;
+}
 }
 
+@media screen and (max-width: 767px) {
+    .timeBasedButton, .timelessButton{
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        border-radius: 20px;
+        border: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 768px) {
 .stakeMoreButton{
     width: 8rem;
     background:#6CBA74;
@@ -73,6 +89,20 @@ button{
     font-weight: 600;
     border-radius: 20px;
     border: none;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .stakeMoreButton{
+        width: 120%;
+        background:#6CBA74;
+        height: 100%;
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border-radius: 20px;
+        border: none;
+    }
 }
 
 .stakeNowButton{
@@ -116,17 +146,31 @@ button{
     background: #FFD601;
 }
 
-.withdraw-btn{
-    background: #6CBA74;
-    color: #fff;
-    width: 9rem;
-    height: 2.8rem;
-    border-radius: 15px;
-    border: none;
-    font-weight: 600;
-    font-size: 1.1rem;
+@media screen and (min-width: 768px) {
+    .withdraw-btn{
+        background: #6CBA74;
+        color: #fff;
+        width: 9rem;
+        height: 2.8rem;
+        border-radius: 15px;
+        border: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
 }
 
+@media screen and (max-width: 767px) {
+    .withdraw-btn{
+        background: #6CBA74;
+        color: #fff;
+        width: 120%;
+        height: 100%;
+        border-radius: 15px;
+        border: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+}
 .connect-btn{
     background: #FFD601;
     color: #fff;
