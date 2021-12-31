@@ -31,15 +31,15 @@
 }
 
 .pools-accordion-header .images>img:first-child{
-    position: relative;
-    width: 20%;
+    position: absolute;
+    width: 30%;
     top: 0;
-    bottom: 100%;
-    left: -4%;
+    bottom: 70%;
+    left: -15%;
 }
 
 .pools-accordion-header .images>img:last-child{
-    width: 45%;
+    width: 60%;
 }
 
 .pools-accordion-header h3{
@@ -180,7 +180,7 @@
         flex-wrap: wrap;
         background: #140517;
         width: 100%;
-        padding: 1.5rem;
+        padding: 3rem 1.5rem;
     }
 
     .pools-accordion-header .images>img:first-child{
