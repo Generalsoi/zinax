@@ -53,7 +53,7 @@ button{
     margin-bottom: 1rem;
     font-weight: 600;
 }
-
+/* 
 @media screen and (min-width: 768px) {
 .timeBasedButton, .timelessButton{
     width: 100%;
@@ -103,7 +103,7 @@ button{
         border-radius: 20px;
         border: none;
     }
-}
+} */
 
 .stakeNowButton{
     width: 8rem;
@@ -116,6 +116,17 @@ button{
     font-weight: 600;
 }
 
+.stakeButton{
+    width: 14rem;
+    height: 3rem;
+    color: #fff;
+    background: #6CBA74;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 .withdrawButton{
     width: 8rem;
     height: 2.5rem;
@@ -123,6 +134,17 @@ button{
     background: #2F2036;
     border: none;
     border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.withdrawButtonOne{
+    width: 12rem;
+    height: 3rem;
+    color: #fff;
+    background: #2F2036;
+    border: none;
+    border-radius: 15px;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -138,6 +160,17 @@ button{
     font-weight: 600;
 }
 
+.harvestButtonOne{
+    width: 12rem;
+    height: 3rem;
+    color: #fff;
+    background: #4B0057;
+    border: none;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
 .timeBasedButton{
     background: #C2A717;
 }
@@ -146,7 +179,7 @@ button{
     background: #FFD601;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .withdraw-btn{
         background: #6CBA74;
         color: #fff;
@@ -170,7 +203,7 @@ button{
         font-weight: 600;
         font-size: 1.1rem;
     }
-}
+} */
 .connect-btn{
     background: #FFD601;
     color: #fff;
@@ -200,11 +233,25 @@ button{
     width: 20%;
 }
 
+@media screen and (max-width: 400px) {
+    .withdrawButtonOne, .harvestButtonOne{
+        width: 7rem;
+    }
 
-@media screen and (max-width: 767px) {
+    .stakeButton{
+        width: 10rem;
+    }
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 767px) {
     .presale-btn, .learnMore-btn, .learnMore-btn-2{
         width: 17rem;
         font-size: 1.5rem;
+    }
+
+    .withdrawButtonOne, .harvestButtonOne{
+        width: 8rem;
     }
 }
 
@@ -212,5 +259,23 @@ button{
     .presale-btn, .learnMore-btn, .learnMore-btn-2{
         width: 19rem;
         font-size: 1.8rem;
+    }
+
+    .withdrawButtonOne, .harvestButtonOne{
+        width: 6rem;
+    }
+
+    .stakeButton{
+        width: 7rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .withdrawButtonOne, .harvestButtonOne{
+        width: 8rem;
+    }
+
+    .stakeButton{
+        width: 10rem;
     }
 }

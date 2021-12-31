@@ -12,6 +12,7 @@ const FarmsAccordion = (props) => {
     aprValue,
     liquidityValue,
     multiplier,
+    setShow,
   } = props;
   return (
     <div className="pools-accordion">
@@ -20,7 +21,7 @@ const FarmsAccordion = (props) => {
           className="pools-accordion-title"
           onClick={() => setIsActive(!isActive)}
         >
-          <div className="pools-accorrdion-header">
+          <div className="pools-accordion-header">
             <div className="images">
               <img src={tokenImg2} alt="token-two" />
               <img src={tokenImg1} alt="token-one" />
@@ -63,19 +64,19 @@ const FarmsAccordion = (props) => {
             </div>
 
             <div className="">
-              <div>
-                <h6>Earned</h6>
-                <p>{earnedValue}</p>
-              </div>
-              <Button buttonContent="withdraw" buttonStyles="withdraw-btn" />
+              <Button
+                buttonContent="Stake"
+                buttonStyles="stakeButton"
+                setShow={setShow}
+              />
             </div>
 
             <div className="">
+              <Button buttonContent="Harvest" buttonStyles="harvestButtonOne" />
               <Button
-                buttonContent="Stake More"
-                buttonStyles="stakeMoreButton"
+                buttonContent="Withdraw"
+                buttonStyles="withdrawButtonOne"
               />
-              <Button buttonContent="Unstake" buttonStyles="timelessButton" />
             </div>
           </div>
         )}

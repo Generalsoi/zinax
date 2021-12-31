@@ -129,6 +129,7 @@ const FarmsContent = () => {
                   aprValue={data.aprValue}
                   earnedValue={data.earnedValue}
                   liquidityValue={data.liquidityValue}
+                  setShow={setShow}
                 />
               ))
 
