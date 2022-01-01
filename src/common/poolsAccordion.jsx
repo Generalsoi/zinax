@@ -12,6 +12,7 @@ const PoolsAccordion = (props) => {
     aprValue,
     liquidityValue,
     multiplier,
+    setShow,
   } = props;
   return (
     <div className="pools-accordion">
@@ -61,20 +62,20 @@ const PoolsAccordion = (props) => {
               </a>
             </div>
 
-            <div>
-              <div>
-                <h6>Earned</h6>
-                <p>{earnedValue}</p>
-              </div>
-              <Button buttonContent="withdraw" buttonStyles="withdraw-btn" />
+            <div className="">
+              <Button
+                buttonContent="Stake"
+                buttonStyles="stakeButton"
+                setShow={setShow}
+              />
             </div>
 
-            <div>
+            <div className="">
+              <Button buttonContent="Harvest" buttonStyles="harvestButtonOne" />
               <Button
-                buttonContent="Time Based"
-                buttonStyles="timeBasedButton"
+                buttonContent="Withdraw"
+                buttonStyles="withdrawButtonOne"
               />
-              <Button buttonContent="Timeless" buttonStyles="timelessButton" />
             </div>
           </div>
         )}
