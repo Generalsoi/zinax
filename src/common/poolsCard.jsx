@@ -12,6 +12,7 @@ const PoolsCard = (props) => {
     earnedValue,
     liquidityValue,
     viewState,
+    setShow,
   } = props;
   return (
     <div className="pools-card">
@@ -32,15 +33,31 @@ const PoolsCard = (props) => {
         </div>
       </div>
       <div className="earned-tokens">
-        <h6>Earned</h6>
-        <p>{earnedValue}</p>
+        <div>
+          <h6>Earned</h6>
+          <p>{earnedValue}</p>
+        </div>
+        <Button
+          buttonContent="Harvest"
+          buttonStyles="harvestButton"
+          setShow={setShow}
+        />
       </div>
       <div className="liquidity-amount">
         <h6>Liquidity</h6>
         <p>{liquidityValue}</p>
       </div>
       <div className="time-buttons">
-        <Button buttonContent="Stake Now" buttonStyles="stakeNowButton" />
+        <Button
+          buttonContent="Stake"
+          buttonStyles="stakeNowButton"
+          setShow={setShow}
+        />
+        <Button
+          buttonContent="Withdraw"
+          buttonStyles="withdrawButton"
+          setShow={setShow}
+        />
       </div>
     </div>
   );

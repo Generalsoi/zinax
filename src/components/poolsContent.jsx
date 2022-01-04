@@ -6,9 +6,12 @@ import PoolsCard from "../common/poolsCard";
 import PoolsAccordion from "../common/poolsAccordion";
 import ZinaxLogo from "../assets/images/zinax-logo.png";
 import BinanceLogo from "../assets/images/binance-logo.png";
+import StakeModal from "./../modals/stakeModal";
 
 const PoolsContent = () => {
   const [viewState, setViewState] = useState(1);
+  const [show, setShow] = useState(false);
+
   const dummyData = [
     {
       tokenNames: "ZINAX-BNB",
@@ -99,6 +102,7 @@ const PoolsContent = () => {
                   aprValue={data.aprValue}
                   earnedValue={data.earnedValue}
                   liquidityValue={data.liquidityValue}
+                  setShow={setShow}
                 />
               ))
             : // <PoolsCard
@@ -121,6 +125,7 @@ const PoolsContent = () => {
                   aprValue={data.aprValue}
                   earnedValue={data.earnedValue}
                   liquidityValue={data.liquidityValue}
+                  setShow={setShow}
                 />
               ))
 
@@ -135,6 +140,7 @@ const PoolsContent = () => {
           // />
         }
       </div>
+      <StakeModal show={show} setShow={setShow} balance="XXXXXXXXXXXX" />
     </div>
   );
 };
