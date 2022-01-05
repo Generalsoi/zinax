@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "../css/farmsContent.css";
-import List from "../assets/images/List.png";
-import Menu from "../assets/images/Menu.png";
-import ZinaxLogo from "../assets/images/zinax-logo.png";
-import BinanceLogo from "../assets/images/binance-logo.png";
-import FarmsCard from "./../common/farmsCard";
-import FarmsAccordion from "../common/FarmAccordion/farmsAccordion";
-import StakeModal from "./../modals/stakeModal";
+import "./farmsContent.css";
+import Menu from "../../../assets/images/Menu.png";
+import ZinaxLogo from "../../../assets/images/zinax-logo.png";
+import BinanceLogo from "../../../assets/images/binance-logo.png";
+import FarmsCard from "../../../common/Card/Farms/farmsCard";
+import FarmsAccordion from "../../../common/Accordion/Farms/farmsAccordion";
+import StakeModal from "../../../modals/Stake/stakeModal";
+import List from "../../../assets/images/List.png";
 
 const FarmsContent = () => {
   const [viewState, setViewState] = useState(1);
@@ -144,7 +144,7 @@ const FarmsContent = () => {
           // />
         }
       </div>
-      <StakeModal show={show} setShow={setShow} balance="XXXXXXXXXXXX" /> 
+      <StakeModal show={show} setShow={setShow} balance="XXXXXXXXXXXX" />
       {/* {stakeType === "timebased-stake" ? (
         <StakeModal show={show} setShow={setShow} />
       ) : (

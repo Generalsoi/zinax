@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import "../css/farmsContent.css";
-import List from "../assets/images/List.png";
-import Menu from "../assets/images/Menu.png";
-import ZinaxLogo from "../assets/images/zinax-logo.png";
-import BinanceLogo from "../assets/images/binance-logo.png";
-import FarmsCard from "./../common/farmsCard";
-import FarmsAccordion from "../common/FarmAccordion/farmsAccordion";
-import StakeModal from "./../modals/stakeModal";
+import "./poolsContent.css";
+import List from "../../../assets/images/List.png";
+import Menu from "../../../assets/images/Menu.png";
+import PoolsCard from "../../../common/Card/Pools/poolsCard";
+import PoolsAccordion from "../../../common/Accordion/Pools/poolsAccordion";
+import ZinaxLogo from "../../../assets/images/zinax-logo.png";
+import BinanceLogo from "../../../assets/images/binance-logo.png";
+import StakeModal from "../../../modals/Stake/stakeModal";
 
-const FarmsContent = () => {
+const PoolsContent = () => {
   const [viewState, setViewState] = useState(1);
   const [show, setShow] = useState(false);
 
@@ -16,7 +16,6 @@ const FarmsContent = () => {
     {
       tokenNames: "ZINAX-BNB",
       tokenImg1: ZinaxLogo,
-      tokenImg2: BinanceLogo,
       multiplier: "40X",
       aprValue: "2.72%",
       earnedValue: "120",
@@ -25,7 +24,6 @@ const FarmsContent = () => {
     {
       tokenNames: "BUSD-BNB",
       tokenImg1: ZinaxLogo,
-      tokenImg2: BinanceLogo,
       multiplier: "50X",
       aprValue: "2.95%",
       earnedValue: "145",
@@ -43,7 +41,6 @@ const FarmsContent = () => {
     {
       tokenNames: "ZINAX-BUSD",
       tokenImg1: ZinaxLogo,
-      tokenImg2: BinanceLogo,
       multiplier: "65X",
       aprValue: "4.76%",
       earnedValue: "198",
@@ -51,25 +48,26 @@ const FarmsContent = () => {
     },
   ];
 
-  const stakeType = dummyData.stakeType;
-  console.log(stakeType);
-
   return (
-    <div className="farms-content">
-      <div className="farms-header-content">
-        <div className="farms-header-content-details">
-          <div className="live-or-finished-farms">
+    <div className="pools-content">
+      <div className="pools-header-content">
+        <div className="pools-header-content-details">
+          <div className="listed-pools">
+            {/* <div>
+              <p>Whitelisted</p>
+            </div>
+            <div>
+              <p>Non-whitelisted</p>
+            </div> */}
+          </div>
+
+          <div className="live-or-finished-pools">
             <div>
               <p>Live</p>
             </div>
             <div>
               <p>Finished</p>
             </div>
-          </div>
-          <span>
-            <p>Earn Zinax as you Stake Liquidity Pool Tokens here</p>
-          </span>
-          <div>
             <img
               src={List}
               alt="list"
@@ -89,23 +87,21 @@ const FarmsContent = () => {
       </div>
 
       <div
-        className={`farms-body ${
-          viewState ? "farms-card-view" : "farms-accordion-view"
+        className={`pools-body ${
+          viewState ? "pools-card-view" : "pools-accordion-view"
         }`}
       >
         {
           viewState
             ? dummyData.map((data) => (
-                <FarmsCard
+                <PoolsCard
                   key={data.tokenNames}
                   tokenNames={data.tokenNames}
                   tokenImg1={data.tokenImg1}
-                  tokenImg2={data.tokenImg2}
                   multiplier={data.multiplier}
                   aprValue={data.aprValue}
                   earnedValue={data.earnedValue}
                   liquidityValue={data.liquidityValue}
-                  stakeType={data.stakeType}
                   setShow={setShow}
                 />
               ))
@@ -120,8 +116,8 @@ const FarmsContent = () => {
               // />
 
               dummyData.map((data) => (
-                <FarmsAccordion
-                  key={data.tokenNames}
+                <PoolsAccordion
+                  key={data.keyNames}
                   tokenNames={data.tokenNames}
                   tokenImg1={data.tokenImg1}
                   tokenImg2={data.tokenImg2}
@@ -144,14 +140,9 @@ const FarmsContent = () => {
           // />
         }
       </div>
-      <StakeModal show={show} setShow={setShow} balance="XXXXXXXXXXXX" /> 
-      {/* {stakeType === "timebased-stake" ? (
-        <StakeModal show={show} setShow={setShow} />
-      ) : (
-        <StakeModal show={show} setShow={setShow} />
-      )} */}
+      <StakeModal show={show} setShow={setShow} balance="XXXXXXXXXXXX" />
     </div>
   );
 };
 
-export default FarmsContent;
+export default PoolsContent;

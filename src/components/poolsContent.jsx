@@ -3,7 +3,7 @@ import "../css/poolsContent.css";
 import List from "../assets/images/List.png";
 import Menu from "../assets/images/Menu.png";
 import PoolsCard from "../common/poolsCard";
-import PoolsAccordion from "../common/poolsAccordion";
+import PoolsAccordion from "../common/Accordion/Farms/Pools/poolsAccordion";
 import ZinaxLogo from "../assets/images/zinax-logo.png";
 import BinanceLogo from "../assets/images/binance-logo.png";
 import StakeModal from "./../modals/stakeModal";

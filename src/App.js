@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import HomePage from "./routes/Homepage";
-import LaunchApp from "./routes/Launchpad";
+import HomePage from "./routes/HomePage/Homepage";
+import LaunchApp from "./routes/LaunchPad/Launchpad";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./common/Navbar";
-import Pools from "./routes/pools";
-import Farms from "./routes/farms";
+import Navbar from "./common/Navbar/Navbar";
+import Pools from "./routes/Pools/pools";
+import Farms from "./routes/Farms/farms";
 
 function App() {
   return (

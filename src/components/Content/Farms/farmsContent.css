@@ -1,0 +1,173 @@
+.farms-content{
+    color: #fff;
+    padding: 5%;
+    background: url('/src/assets/images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.farms-header-content{
+    padding: 1% 5%;
+    background: #140517;
+}
+
+.farms-header-content-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* .listed-farms{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.listed-farms>div{
+    width: 12rem;
+    height: 2rem;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 0.5%;
+}
+
+.listed-farms>div:first-child{
+    position: relative;
+    left: 7%;
+    background: #fff;
+    color: #2A0640;
+} */
+
+.live-or-finished-farms{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.live-or-finished-farms>div:nth-child(2){
+    width: 10rem;
+    height: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 0.8%;
+    color: #961581;
+    background: #FFD601;
+}
+
+.live-or-finished-farms>div:first-child{
+    width: 5rem;
+    height: 2rem;
+    position: relative;
+    left: 20%;
+    background: #fff;
+    color: #2A0640;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 0.8%;
+}
+
+.farms-header-content-details span{
+    color: #FFD601;
+    cursor: text;
+}
+
+.farms-body{
+    margin-top: 2rem;
+}
+
+.farms-card-view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*****************************************/
+/*** Responsive Design *******************/
+@media screen and (max-width: 767px) {
+    .farms-content{
+        padding: 5% 4%;
+        width: 100%;
+    }
+
+    .farms-header-content{
+        padding: 2% 3%;
+    }
+
+    .farms-header-content-details{
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: flex-start;
+    }
+/* 
+    .listed-farms>div:first-child{
+        width: 6rem;
+        padding-top: 2%;
+        left: 0;
+    }
+
+    .listed-farms>div:nth-child(2){
+        width: 10rem;
+        padding-top: 2%;
+        position: relative;
+        right: 10%;
+    }
+
+    .listed-farms>div p{
+        font-size: 0.8rem;
+    } */
+
+    .live-or-finished-farms{
+        justify-content: space-around;
+    }
+
+    .live-or-finished-farms>div:first-child, .live-or-finished-farms>div:nth-child(2){
+        padding-top: 2%;
+    }
+
+    .live-or-finished-farms>div:first-child{
+        left: 0;
+        z-index: 2;
+    }
+
+    .live-or-finished-farms>div:nth-child(2){
+        position: relative;
+        right: 16%;
+    }
+
+    .live-or-finished-farms>div p{
+        font-size: 0.8rem;
+    }
+
+    .farms-card-view{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .listed-farms>div:first-child{
+        width: 8rem;
+    }
+
+    .farms-header-content{
+        padding: 2% 3%;
+    }
+
+    .farms-header-content-details{
+        align-items: center;
+    }  
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .farms-card-view{
+        justify-content: space-around;
+    }
+}
