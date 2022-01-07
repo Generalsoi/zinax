@@ -18,6 +18,10 @@ const Navbar = (props) => {
 
   const { page, setShow } = props;
 
+  //This is the isConnected variable, I don't know how to get the logic done, but
+  //maybe this would work.
+  const isConnected = true;
+
   if (page === "0") {
     return (
       <header className="header">
@@ -270,14 +274,18 @@ const Navbar = (props) => {
                     <p>BSC</p>
                   </div>
                 </div> */}
-                <Button
-                  buttonContent="Connect"
-                  buttonStyles="farms-connect-btn"
-                  btnSideImg={ConnectImg}
-                  btnSideImgClassName="connect-img"
-                  btnSideImgAlt="connect"
-                  setShow={setShow}
-                />
+                {!isConnected ? (
+                  <button className="walletAddressBtn">0x23eb578bcdd</button>
+                ) : (
+                  <Button
+                    buttonContent="Connect"
+                    buttonStyles="farms-connect-btn"
+                    btnSideImg={ConnectImg}
+                    btnSideImgClassName="connect-img"
+                    btnSideImgAlt="connect"
+                    setShow={setShow}
+                  />
+                )}
               </div>
             </div>
           ) : (

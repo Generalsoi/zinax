@@ -24,7 +24,8 @@ const Introduction = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Button buttonContent="Presale" buttonStyles="presale-btn" />
+          <button className="presale-btn">Presale</button>
+          {/* <Button buttonContent="Presale" buttonStyles="presale-btn" /> */}
         </a>
 
         <a
@@ -32,7 +33,8 @@ const Introduction = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Button buttonContent="Learn More" buttonStyles="learnMore-btn" />
+          <button className="learnMore-btn">Learn More</button>
+          {/* <Button buttonContent="Learn More" buttonStyles="learnMore-btn" /> */}
         </a>
       </div>
     </section>
