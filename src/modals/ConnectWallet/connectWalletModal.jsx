@@ -1,6 +1,6 @@
 import React from "react";
 import "./connectWalletModal.css";
-import Metamusk from "../../assets/images/metamusk.png";
+import Metamusk from "../../assets/images/metamask.png";
 import Coinbase from "../../assets/images/coinbase.png";
 import Portis from "../../assets/images/portis.png";
 import WalletConnect from "../../assets/images/walletconnect.png";

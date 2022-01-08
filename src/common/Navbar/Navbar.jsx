@@ -274,7 +274,7 @@ const Navbar = (props) => {
                     <p>BSC</p>
                   </div>
                 </div> */}
-                {!isConnected ? (
+                {isConnected ? (
                   <button className="walletAddressBtn">0x23eb578bcdd</button>
                 ) : (
                   <Button
