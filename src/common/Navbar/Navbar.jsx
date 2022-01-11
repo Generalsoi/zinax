@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import ZinaxLogo from "../../assets/images/zinax-logo.png";
-import Button from "../Button/button";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import ConnectImg from "../../assets/images/connectImg.png";
 import useWeb3Modal from "../../hooks/useWeb3Modal";
 import UseConnect from "../../hooks/useConnect";
-import { Header, Button } from "./Navbar";
+import Button from "./Navbar";
 
 const Navbar = (props) => {
   const [navLinks, setNavLinks] = useState(1);
