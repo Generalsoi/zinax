@@ -5,9 +5,13 @@ import Button from "../Button/button";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import ConnectImg from "../../assets/images/connectImg.png";
+import useWeb3Modal from "../../hooks/useWeb3Modal";
+import UseConnect from "../../hooks/useConnect";
+import { Header, Button } from "./Navbar";
 
 const Navbar = (props) => {
-  const [navLinks, setNavLinks, onClickConnect] = useState(1);
+  const [navLinks, setNavLinks] = useState(1);
+  const [provider, loadWeb3Modal, logoutOfWeb3Modal] = useWeb3Modal();
 
   useEffect(() => {
     const windSize = window.innerWidth;
@@ -273,10 +277,7 @@ const Navbar = (props) => {
                   <div className="bsc-div">
                     <p>BSC</p>
                   </div>
-                </div> */}
-                {isConnected ? (
-                  <button className="walletAddressBtn">0x23eb578bcdd</button>
-                ) : (
+                </div> 
                   <Button
                     buttonContent="Connect"
                     buttonStyles="farms-connect-btn"
@@ -284,8 +285,8 @@ const Navbar = (props) => {
                     btnSideImgClassName="connect-img"
                     btnSideImgAlt="connect"
                     setShow={setShow}
-                  />
-                )}
+                  /> */}
+                  <UseConnect provider={provider} loadWeb3Modal={loadWeb3Modal} logoutOfWeb3Modal={logoutOfWeb3Modal} />
               </div>
             </div>
           ) : (
