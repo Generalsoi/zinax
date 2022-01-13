@@ -4,7 +4,7 @@ import HomePage from "./routes/HomePage/Homepage";
 import LaunchApp from "./routes/LaunchPad/Launchpad";
 import { Router, Route } from "react-router-dom";
 import Pools from "./routes/Pools/Pools";
-import Farms from "./routes/Farms";
+import Farms from "./routes/Farms/Farms";
 
 function App() {
   return (

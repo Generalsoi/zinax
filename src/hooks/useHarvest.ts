@@ -1,8 +1,8 @@
 import { useCallback } from 'react'
 import { useWeb3React } from '@web3-react/core'
 import { useDispatch } from 'react-redux'
-import { fetchFarmUserDataAsync, updateUserBalance, updateUserPendingReward } from 'state/actions'
-import { soushHarvest, soushHarvestBnb, harvest } from 'utils/callHelpers'
+import { fetchFarmUserDataAsync, updateUserBalance, updateUserPendingReward } from '../state/actions'
+import { soushHarvest, soushHarvestBnb, harvest } from '../utils/callHelpers'
 import { useMasterchef, useSousChef } from './useContract'
 
 export const useHarvest = (farmPid: number) => {

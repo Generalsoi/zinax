@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { PriceApiResponse, PriceState } from 'state/types'
+import { PriceApiResponse, PriceState } from '../../state/types'
 
 const initialState: PriceState = {
   isLoading: false,

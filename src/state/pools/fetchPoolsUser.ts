@@ -1,15 +1,15 @@
 import { AbiItem } from 'web3-utils'
-import poolsConfig from 'config/constants/pools'
-import masterChefABI from 'config/abi/masterchef.json'
-import sousChefABI from 'config/abi/sousChef.json'
-import erc20ABI from 'config/abi/erc20.json'
-import { QuoteToken } from 'config/constants/types'
-import multicall from 'utils/multicall'
-import { getAddress, getMasterChefAddress } from 'utils/addressHelpers'
-import { getWeb3NoAccount } from 'utils/web3'
+import poolsConfig from '../../config/constants/pools'
+import masterChefABI from '../../config/abi/masterchef.json'
+import sousChefABI from '../../config/abi/sousChef.json'
+import erc20ABI from '../../config/abi/erc20.json'
+import { QuoteToken } from '../../config/constants/types'
+import multicall from '../../utils/multicall'
+import { getAddress, getMasterChefAddress } from '../../utils/addressHelpers'
+import { getWeb3NoAccount } from '../../utils/web3'
 import BigNumber from 'bignumber.js'
 
-// Pool 0, Cake / Cake is a different kind of contract (master chef)
+// Pool 0, Zinax / Zinax is a different kind of contract (master chef)
 // BNB pools use the native BNB token (wrapping ? unwrapping is done at the contract level)
 const nonBnbPools = poolsConfig.filter((p) => p.stakingTokenName !== QuoteToken.BNB)
 const bnbPools = poolsConfig.filter((p) => p.stakingTokenName === QuoteToken.BNB)
@@ -69,7 +69,7 @@ export const fetchUserStakeBalances = async (account) => {
     {},
   )
 
-  // Cake / Cake pool
+  // Zinax / Zinax pool
   const { amount: masterPoolAmount } = await masterChefContract.methods.userInfo('0', account).call()
 
   return { ...stakedBalances, 0: new BigNumber(masterPoolAmount).toJSON() }
@@ -90,8 +90,8 @@ export const fetchUserPendingRewards = async (account) => {
     {},
   )
 
-  // Cake / Cake pool
-  const pendingReward = await masterChefContract.methods.pendingCake('0', account).call()
+  // Zinax / Zinax pool
+  const pendingReward = await masterChefContract.methods.pendingZinax('0', account).call()
 
   return { ...pendingRewards, 0: new BigNumber(pendingReward).toJSON() }
 }

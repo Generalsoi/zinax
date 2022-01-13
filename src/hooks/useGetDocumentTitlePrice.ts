@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
-import { usePriceCakeBusd } from 'state/hooks'
+import { usePriceZinaxBusd } from '../state/hooks'
 
 const useGetDocumentTitlePrice = () => {
-  const zinaxPriceUsd = usePriceCakeBusd()
+  const zinaxPriceUsd = usePriceZinaxBusd()
   useEffect(() => {
-    document.title = `PancakeSwap - $${Number(zinaxPriceUsd).toLocaleString(undefined, {
+    document.title = `Zinax - $${Number(zinaxPriceUsd).toLocaleString(undefined, {
       minimumFractionDigits: 3,
       maximumFractionDigits: 3,
     })}`
