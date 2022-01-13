@@ -5,14 +5,14 @@ import BigNumber from 'bignumber.js'
 import { FarmWithStakedValue } from '../../../components/FarmCard/FarmCard'
 import { getBalanceNumber } from '../../../../../utils/formatBalance'
 import { useHarvest } from '../../../../../hooks/useHarvest'
-import { usePriceCakeBusd } from '../../../../../state/hooks'
+import { usePriceZinaxBusd } from '../../../../../state/hooks'
 import { useCountUp } from 'react-countup'
 
 import { ActionContainer, ActionTitles, Title, Subtle, ActionContent, Earned, Staked } from './styles'
 
 const HarvestAction: React.FunctionComponent<FarmWithStakedValue> = ({ pid, userData }) => {
   const earningsBigNumber = userData ? new BigNumber(userData.earnings) : null
-  const zinaxPrice = usePriceCakeBusd()
+  const zinaxPrice = usePriceZinaxBusd()
   let earnings = null
   let earningsBusd = 0
   let displayBalance = '?'

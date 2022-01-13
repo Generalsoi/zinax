@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from 'react'
 import BigNumber from 'bignumber.js'
 import { kebabCase } from 'lodash'
-import { useWeb3React } from '@web3-react/core'
+// import { useWeb3React } from '@web3-react/core'
 import { Toast, toastTypes } from '@pancakeswap-libs/uikit'
 import { useSelector, useDispatch } from 'react-redux'
 import useRefresh from '../hooks/useRefresh'

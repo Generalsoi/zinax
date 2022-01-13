@@ -3,12 +3,12 @@ import { Route, useRouteMatch, useLocation } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
-import { Image, Heading, RowType, Toggle, Text } from '@pancakeswap-libs/uikit'
+import { Heading, RowType, Toggle, Text } from '@pancakeswap-libs/uikit'
 import styled from 'styled-components'
 import { BLOCKS_PER_YEAR, ZINAX_PER_BLOCK, ZINAX_POOL_PID } from '../../config'
 import FlexLayout from '../../components/layout/Flex'
 import Page from '../../components/layout/Page'
-import { useFarms, usePriceBnbBusd, usePriceCakeBusd, usePriceEthBusd } from '../../state/hooks'
+import { useFarms, usePriceBnbBusd, usePriceZinaxBusd, usePriceEthBusd } from '../../state/hooks'
 import useRefresh from '../../hooks/useRefresh'
 import { fetchFarmUserDataAsync } from '../../state/actions'
 import { QuoteToken } from '../../config/constants/types'
@@ -89,12 +89,6 @@ const ViewControls = styled.div`
   }
 `
 
-const StyledImage = styled(Image)`
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 58px;
-`
-
 const Header = styled.div`
   padding: 32px 0px;
   background: ${({ theme }) => theme.colors.gradients.bubblegum};
@@ -112,7 +106,7 @@ const Farms: React.FC = () => {
   const { path } = useRouteMatch()
   const { pathname } = useLocation()
   const farmsLP = useFarms()
-  const zinaxPrice = usePriceCakeBusd()
+  const zinaxPrice = usePriceZinaxBusd()
   const bnbPrice = usePriceBnbBusd()
   const [query, setQuery] = useState('')
   const [viewMode, setViewMode] = useState(ViewMode.TABLE)
