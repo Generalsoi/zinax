@@ -46,6 +46,37 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
+    isCommunity: true,  
+  },
+  {
+    pid: 3,
+    lpSymbol: 'BUSD-BNB LP',
+    lpAddresses: {
+      97: '0xe70b7523f4bffa1f2e88d2ba709afd026030f412',
+      56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
+    },
+    tokenSymbol: 'ZINAX',
+    tokenAddresses: {
+      97: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+      56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    pid: 4,
+    lpSymbol: 'ETH-BNB LP',
+    lpAddresses: {
+      97: '0xe70b7523f4bffa1f2e88d2ba709afd026030f412',
+      56: '0x70D8929d04b60Af4fb9B58713eBcf18765aDE422',
+    },
+    tokenSymbol: 'ZINAX',
+    tokenAddresses: {
+      97: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+      56: '0x2170ed0880ac9a755fd29b2688956bd959f933f8',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
 
 ]

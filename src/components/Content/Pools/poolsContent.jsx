@@ -7,6 +7,9 @@ import PoolsAccordion from "../../../common/Accordion/Pools/poolsAccordion";
 import ZinaxLogo from "../../../assets/images/zinax-logo.png";
 import BinanceLogo from "../../../assets/images/binance-logo.png";
 import StakeModal from "../../../modals/Stake/stakeModal";
+import PoolCard from './components/PoolCard'
+import PoolTabButtons from './components/PoolTabButtons'
+import Divider from './components/Divider'
 
 const PoolsContent = () => {
   const [viewState, setViewState] = useState(1);

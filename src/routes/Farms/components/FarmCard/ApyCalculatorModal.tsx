@@ -2,7 +2,7 @@ import React from 'react'
 import BigNumber from 'bignumber.js'
 import styled from 'styled-components'
 import { Modal, Text, LinkExternal, Flex } from '@pancakeswap-libs/uikit'
-import { calculateCakeEarnedPerThousandDollars, apyModalRoi } from '../../../../utils/compoundApyHelpers'
+import { calculateZinaxEarnedPerThousandDollars, apyModalRoi } from '../../../../utils/compoundApyHelpers'
 
 interface ApyCalculatorModalProps {
   onDismiss?: () => void
@@ -36,12 +36,12 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
   addLiquidityUrl,
 }) => {
   const farmApy = apy.times(new BigNumber(100)).toNumber()
-  const oneThousandDollarsWorthOfCake = 1000 / zinaxPrice.toNumber()
+  const oneThousandDollarsWorthOfZinax = 1000 / zinaxPrice.toNumber()
 
-  const zinaxEarnedPerThousand1D = calculateCakeEarnedPerThousandDollars({ numberOfDays: 1, farmApy, zinaxPrice })
-  const zinaxEarnedPerThousand7D = calculateCakeEarnedPerThousandDollars({ numberOfDays: 7, farmApy, zinaxPrice })
-  const zinaxEarnedPerThousand30D = calculateCakeEarnedPerThousandDollars({ numberOfDays: 30, farmApy, zinaxPrice })
-  const zinaxEarnedPerThousand365D = calculateCakeEarnedPerThousandDollars({ numberOfDays: 365, farmApy, zinaxPrice })
+  const zinaxEarnedPerThousand1D = calculateZinaxEarnedPerThousandDollars({ numberOfDays: 1, farmApy, zinaxPrice })
+  const zinaxEarnedPerThousand7D = calculateZinaxEarnedPerThousandDollars({ numberOfDays: 7, farmApy, zinaxPrice })
+  const zinaxEarnedPerThousand30D = calculateZinaxEarnedPerThousandDollars({ numberOfDays: 30, farmApy, zinaxPrice })
+  const zinaxEarnedPerThousand365D = calculateZinaxEarnedPerThousandDollars({ numberOfDays: 365, farmApy, zinaxPrice })
 
   return (
     <Modal title="ROI" onDismiss={onDismiss}>
@@ -67,7 +67,7 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
         </GridItem>
         <GridItem>
           <Text>
-            {apyModalRoi({ amountEarned: zinaxEarnedPerThousand1D, amountInvested: oneThousandDollarsWorthOfCake })}%
+            {apyModalRoi({ amountEarned: zinaxEarnedPerThousand1D, amountInvested: oneThousandDollarsWorthOfZinax })}%
           </Text>
         </GridItem>
         <GridItem>
@@ -79,7 +79,7 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
         </GridItem>
         <GridItem>
           <Text>
-            {apyModalRoi({ amountEarned: zinaxEarnedPerThousand7D, amountInvested: oneThousandDollarsWorthOfCake })}%
+            {apyModalRoi({ amountEarned: zinaxEarnedPerThousand7D, amountInvested: oneThousandDollarsWorthOfZinax })}%
           </Text>
         </GridItem>
         <GridItem>
@@ -91,7 +91,7 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
         </GridItem>
         <GridItem>
           <Text>
-            {apyModalRoi({ amountEarned: zinaxEarnedPerThousand30D, amountInvested: oneThousandDollarsWorthOfCake })}%
+            {apyModalRoi({ amountEarned: zinaxEarnedPerThousand30D, amountInvested: oneThousandDollarsWorthOfZinax })}%
           </Text>
         </GridItem>
         <GridItem>
@@ -103,7 +103,7 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
         </GridItem>
         <GridItem>
           <Text>
-            {apyModalRoi({ amountEarned: zinaxEarnedPerThousand365D, amountInvested: oneThousandDollarsWorthOfCake })}%
+            {apyModalRoi({ amountEarned: zinaxEarnedPerThousand365D, amountInvested: oneThousandDollarsWorthOfZinax })}%
           </Text>
         </GridItem>
         <GridItem>

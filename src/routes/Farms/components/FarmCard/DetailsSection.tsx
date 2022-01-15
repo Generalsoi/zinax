@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 const StyledLinkExternal = styled(LinkExternal)`
   text-decoration: none;
   font-weight: normal;
-  color: ${({ theme }) => theme.colors.text};
+  color: #FFD601;
   display: flex;
   align-items: center;
 

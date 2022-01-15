@@ -1,6 +1,8 @@
-import React from 'react'
-import { Button, useWalletModal } from '@pancakeswap-libs/uikit'
-import useAuth from '../hooks/useAuth'
+import React from 'react';
+import { Button, useWalletModal } from '@pancakeswap-libs/uikit';
+import useAuth from '../hooks/useAuth';
+
+
 
 const UnlockButton = (props) => {
   const { login, logout } = useAuth()

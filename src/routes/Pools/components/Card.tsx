@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 const Card = styled.div<{ isActive?: boolean; isFinished?: boolean }>`
-  background: rgba(255, 255, 255, 0.9);
+  background: #140517;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 32px;
+  border-radius: 37px;
   display: flex;
-  color: ${({ isFinished, theme }) => theme.colors[isFinished ? 'textDisabled' : 'secondary']};
+  color: #FFD601;
   box-shadow: ${({ isActive }) =>
     isActive
       ? '0px 0px 0px 1px #0098A1, 0px 0px 4px 8px rgba(31, 199, 212, 0.4);'

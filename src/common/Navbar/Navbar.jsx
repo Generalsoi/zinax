@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./navbar.css";
+import "../Button/button.css";
 import ZinaxLogo from "../../assets/images/zinax-logo.png";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
@@ -284,7 +285,9 @@ const Navbar = (props) => {
                     btnSideImgAlt="connect"
                     setShow={setShow}
                   /> */}
-                  <UseConnect provider={provider} loadWeb3Modal={loadWeb3Modal} logoutOfWeb3Modal={logoutOfWeb3Modal} />
+                  <UseConnect provider={provider} 
+                  loadWeb3Modal={loadWeb3Modal} 
+                  logoutOfWeb3Modal={logoutOfWeb3Modal} />
               </div>
             </div>
           ) : (

@@ -7,10 +7,11 @@ import { Router, Redirect, Route } from "react-router-dom";
 import Pools from "./routes/Pools/Pools";
 import Farms from "./routes/Farms/Farms";
 import history from "./routerHistory";
-import useEagerConnect from './hooks/useEagerConnect'
-import { useFetchPriceList, useFetchPublicData } from './state/hooks'
-import useGetDocumentTitlePrice from './hooks/useGetDocumentTitlePrice'
-import ToastListener from './components/ToastListener'
+import useEagerConnect from './hooks/useEagerConnect';
+import { useFetchPriceList, useFetchPublicData } from './state/hooks';
+import useGetDocumentTitlePrice from './hooks/useGetDocumentTitlePrice';
+import ToastListener from './components/ToastListener';
+import Navbar from "./common/Navbar/Navbar";
 
 // This config is required for number formating
 BigNumber.config({
@@ -33,16 +34,15 @@ const App: React.FC = () => {
   return (
     <div>
       <Router history={history}>
-        <Route path="/"><HomePage/></Route>
+        <Navbar/>
+        <Route path="/"><Redirect to="/pools"/></Route>
         <Route path="/launchpad"><LaunchApp/></Route>
         <Route path="/pools"><Pools/></Route>
         <Route path="/farms"><Farms/></Route>
-        {/* Redirects */}
-        <Route path="/"><Redirect to="/pools"/></Route>
         <ToastListener />
       </Router>
     </div>
   );
 }
 
-export default App;
+export default React.memo(App)
