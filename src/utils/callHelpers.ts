@@ -7,10 +7,10 @@ export const approve = async (lpContract, masterChefContract, account) => {
     .send({ from: account })
 }
 
-export const stake = async (masterChefContract, pid, amount, account) => {
+export const stake = async (masterChefContract, pid, amount, referrer, account) => {
   if (pid === 0) {
     return masterChefContract.methods
-      .enterStaking(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
+      .deposit(pid, new BigNumber(amount).times(new BigNumber(10).pow(18)).toString(), referrer)
       .send({ from: account, gas: 200000 })
       .on('transactionHash', (tx) => {
         return tx.transactionHash
@@ -18,7 +18,7 @@ export const stake = async (masterChefContract, pid, amount, account) => {
   }
 
   return masterChefContract.methods
-    .deposit(pid, new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
+    .deposit(pid, new BigNumber(amount).times(new BigNumber(10).pow(18)).toString(), referrer)
     .send({ from: account, gas: 200000 })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
@@ -46,7 +46,7 @@ export const sousStakeBnb = async (sousChefContract, amount, account) => {
 export const unstake = async (masterChefContract, pid, amount, account) => {
   if (pid === 0) {
     return masterChefContract.methods
-      .leaveStaking(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
+      .withdraw(pid, new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
       .send({ from: account, gas: 200000 })
       .on('transactionHash', (tx) => {
         return tx.transactionHash
@@ -97,10 +97,10 @@ export const sousEmegencyUnstake = async (sousChefContract, amount, account) => 
     })
 }
 
-export const harvest = async (masterChefContract, pid, account) => {
+export const harvest = async (masterChefContract, pid, referrer, account) => {
   if (pid === 0) {
     return masterChefContract.methods
-      .leaveStaking('0')
+      .withdraw(pid, '0')
       .send({ from: account, gas: 200000 })
       .on('transactionHash', (tx) => {
         return tx.transactionHash
@@ -108,7 +108,7 @@ export const harvest = async (masterChefContract, pid, account) => {
   }
 
   return masterChefContract.methods
-    .deposit(pid, '0')
+    .deposit(pid, '0', referrer)
     .send({ from: account, gas: 200000 })
     .on('transactionHash', (tx) => {
       return tx.transactionHash

@@ -29,6 +29,6 @@ export default {
   },
   sousChef: {
     97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
-    56: '0x6ab8463a4185b80905e05a9ff80a2d6b714b9e95',
+    56: '0x84e4fbC4064B7b4676Cb0cB5b0ac70907c5FC842',
    },
 }
