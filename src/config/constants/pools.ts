@@ -10,7 +10,7 @@ const pools: PoolConfig[] = [
       97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
       56: '0x9BC5e26bee164955992320d6cB2e1792c9e42473',
     },
-    poolCategory: PoolCategory.CORE,
+    poolCategory: PoolCategory.TIMELESS,
     projectLink: 'https://zinax.app/',
     harvest: true,
     tokenPerBlock: '0.075',

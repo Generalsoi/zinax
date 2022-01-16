@@ -240,7 +240,7 @@ const Navbar = (props) => {
                 </li>
                 <li>
                   <NavLink
-                    to="/services"
+                    to="/"
                     className={({ isActive }) =>
                       isActive ? "nav-links-active" : "nav-links-inactive"
                     }
@@ -250,7 +250,7 @@ const Navbar = (props) => {
                 </li>
                 <li>
                   <NavLink
-                    to="/nfts"
+                    to="/"
                     className={({ isActive }) =>
                       isActive ? "nav-links-active" : "nav-links-inactive"
                     }
@@ -260,7 +260,7 @@ const Navbar = (props) => {
                 </li>
                 <li>
                   <NavLink
-                    to="/dao"
+                    to="/"
                     className={({ isActive }) =>
                       isActive ? "nav-links-active" : "nav-links-inactive"
                     }

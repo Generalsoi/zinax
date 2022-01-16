@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Tag, Flex, Heading, Image } from '@pancakeswap-libs/uikit'
-import { CommunityTag, CoreTag } from '../../../../components/Tags'
+import { CommunityTag, CoreTag, TimebasedTag, TimelessTag } from '../../../../components/Tags'
 
 export interface ExpandableSectionProps {
   lpLabel?: string
   multiplier?: string
-  isCommunityFarm?: boolean
+  isTimebasedFarm?: boolean
+  isTimelessFarm?: boolean
   farmImage?: string
   tokenSymbol?: string
 }
@@ -24,7 +25,8 @@ const MultiplierTag = styled(Tag)`
 const CardHeading: React.FC<ExpandableSectionProps> = ({
   lpLabel,
   multiplier,
-  isCommunityFarm,
+  isTimebasedFarm,
+  isTimelessFarm,
   farmImage,
   tokenSymbol,
 }) => {
@@ -34,7 +36,7 @@ const CardHeading: React.FC<ExpandableSectionProps> = ({
       <Flex flexDirection="column" alignItems="flex-end">
         <Heading mb="4px">{lpLabel}</Heading>
         <Flex justifyContent="center">
-          {isCommunityFarm ? <CommunityTag /> : <CoreTag />}
+          {isTimebasedFarm ? <TimebasedTag /> : <TimelessTag />}
           <MultiplierTag variant="secondary">{multiplier}</MultiplierTag>
         </Flex>
       </Flex>

@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import { LinkExternal, Text, Link } from '@pancakeswap-libs/uikit'
 import { FarmWithStakedValue } from '../../../components/FarmCard/FarmCard'
 import getLiquidityUrlPathParts from '../../../../../utils/getLiquidityUrlPathParts'
-import { communityFarms } from '../../../../../config/constants'
-import { CommunityTag, CoreTag, DualTag } from '../../../../../components/Tags'
+import { timebasedFarms } from '../../../../../config/constants'
+import { CommunityTag, CoreTag, DualTag,TimebasedTag, TimelessTag } from '../../../../../components/Tags'
 
 import HarvestAction from './HarvestAction'
 import StakedAction from './StakedAction'
@@ -114,7 +114,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({ details, apr, 
   const lpAddress = farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]
   const bsc = `https://bscscan.com/address/${lpAddress}`
   const info = `https://pancakeswap.info/pair/${lpAddress}`
-  const isCommunityFarm = communityFarms.includes(tokenSymbol)
+  const isTimebasedFarm = timebasedFarms.includes(tokenSymbol)
 
   return (
     <Container>
@@ -132,7 +132,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({ details, apr, 
           {'Info site'}
         </StyledLink>
         <TagsContainer>
-          {isCommunityFarm ? <CommunityTag /> : <CoreTag />}
+          {isTimebasedFarm ? <TimebasedTag /> : <TimelessTag />}
           {dual ? <DualTag /> : null}
         </TagsContainer>
       </InfoContainer>

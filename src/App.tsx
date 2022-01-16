@@ -3,7 +3,7 @@ import BigNumber from "bignumber.js";
 import "./App.css";
 import HomePage from "./routes/HomePage/Homepage";
 import LaunchApp from "./routes/LaunchPad/Launchpad";
-import { Router, Redirect, Route } from "react-router-dom";
+import { Router, Redirect, Switch, Route } from "react-router-dom";
 import Pools from "./routes/Pools/Pools";
 import Farms from "./routes/Farms/Farms";
 import history from "./routerHistory";
@@ -34,9 +34,7 @@ const App: React.FC = () => {
   return (
     <div>
       <Router history={history}>
-        <Navbar/>
         <Route path="/"><Redirect to="/pools"/></Route>
-        <Route path="/launchpad"><LaunchApp/></Route>
         <Route path="/pools"><Pools/></Route>
         <Route path="/farms"><Farms/></Route>
         <ToastListener />

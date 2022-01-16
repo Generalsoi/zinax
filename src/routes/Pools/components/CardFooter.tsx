@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { getBalanceNumber } from '../../../utils/formatBalance';
 import { ChevronDown, ChevronUp } from 'react-feather'
 import Balance from '../../../components/Balance'
-import { CommunityTag, CoreTag, BinanceTag } from '../../../components/Tags'
+import { CommunityTag, CoreTag, BinanceTag, TimebasedTag, TimelessTag } from '../../../components/Tags'
 import useBlock from '../../../hooks/useBlock'
 import { PoolCategory } from '../../../config/constants/types'
 
@@ -12,6 +12,8 @@ const tags = {
   [PoolCategory.BINANCE]: BinanceTag,
   [PoolCategory.CORE]: CoreTag,
   [PoolCategory.COMMUNITY]: CommunityTag,
+  [PoolCategory.TIMEBASED]: TimebasedTag,
+  [PoolCategory.TIMELESS]: TimelessTag,
 }
 
 interface Props {

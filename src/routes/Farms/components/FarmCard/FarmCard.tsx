@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react'
 import BigNumber from 'bignumber.js'
 import styled, { keyframes } from 'styled-components'
 import { Flex, Text, Skeleton } from '@pancakeswap-libs/uikit'
-import { communityFarms } from '../../../../config/constants'
+import { timebasedFarms } from '../../../../config/constants'
 import { Farm } from '../../../../state/types'
 import { provider as ProviderType } from 'web3-core'
 import ExpandableSectionButton from '../../../../components/ExpandableSectionButton'
@@ -84,7 +84,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, zinaxPrice, bnbPrice
 
   const [showExpandableSection, setShowExpandableSection] = useState(false)
 
-  const isCommunityFarm = communityFarms.includes(farm.tokenSymbol)
+  const isTimebasedFarm = timebasedFarms.includes(farm.tokenSymbol)
   // We assume the token name is coin pair + lp e.g. ZINAX-BNB LP, LINK-BNB LP,
   // NAR-ZINAX LP. The images should be cake-bnb.svg, link-bnb.svg, nar-cake.svg
   const farmImage = farm.lpSymbol.split(' ')[0].toLocaleLowerCase()
@@ -123,7 +123,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, zinaxPrice, bnbPrice
       <CardHeading
         lpLabel={lpLabel}
         multiplier={farm.multiplier}
-        isCommunityFarm={isCommunityFarm}
+        isTimebasedFarm={isTimebasedFarm}
         farmImage={farmImage}
         tokenSymbol={farm.tokenSymbol}
       />

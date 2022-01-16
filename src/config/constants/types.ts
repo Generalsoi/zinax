@@ -14,6 +14,8 @@ export enum PoolCategory {
   'COMMUNITY' = 'Community',
   'CORE' = 'Core',
   'BINANCE' = 'Binance', // Pools using native BNB behave differently than pools using a token
+  'TIMEBASED' = 'Time-based',
+  'TIMELESS' = 'Timeless',
 }
 
 export interface Address {
@@ -31,6 +33,9 @@ export interface FarmConfig {
   quoteTokenAdresses: Address
   multiplier?: string
   isCommunity?: boolean
+  isTimebased?: boolean
+  isTimeless?: boolean
+  isTokenOnly?: boolean
   dual?: {
     rewardPerBlock: number
     earnLabel: string

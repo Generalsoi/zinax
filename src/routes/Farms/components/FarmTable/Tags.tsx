@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FarmWithStakedValue } from '../../components/FarmCard/FarmCard'
-import { communityFarms } from '../../../../config/constants'
-import { CommunityTag, CoreTag, DualTag } from '../../../../components/Tags'
+import { timebasedFarms } from '../../../../config/constants'
+import { CommunityTag, CoreTag, DualTag, TimebasedTag, TimelessTag } from '../../../../components/Tags'
 
 const StyledCommunityTag = styled(CommunityTag)`
   height: 24px;
@@ -30,13 +30,29 @@ const StyledDualTag = styled(DualTag)`
     width: 14px;
   }
 `
+const StyledTimebasedTag = styled(TimebasedTag)`
+  height: 24px;
+  padding: 0 6px;
+
+  svg {
+    width: 14px;
+  }
+`
+const StyledTimelessTag = styled(TimelessTag)`
+  height: 24px;
+  padding: 0 6px;
+
+  svg {
+    width: 14px;
+  }
+`
 
 const Tags: React.FunctionComponent<FarmWithStakedValue> = ({ tokenSymbol, dual }) => {
-  const isCommunityFarm = communityFarms.includes(tokenSymbol)
+  const isTimebasedFarm = timebasedFarms.includes(tokenSymbol)
 
   return (
     <>
-      {isCommunityFarm ? <StyledCommunityTag /> : <StyledCoreTag />}
+      {isTimebasedFarm ? <StyledTimebasedTag /> : <StyledTimelessTag />}
       {dual && <StyledDualTag />}
     </>
   )

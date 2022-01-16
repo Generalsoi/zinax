@@ -31,6 +31,7 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
+    isTimeless: true,
   },
   {
     pid: 2,
@@ -46,7 +47,7 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
-    isCommunity: true,  
+    isTimeless: true,  
   },
   {
     pid: 3,
@@ -62,6 +63,7 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
+    isTimebased: true,
   },
   {
     pid: 4,
@@ -77,7 +79,9 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
+    isTimebased: true,
   },
+  
   {
     pid: 5,
     lpSymbol: 'ZINA',
